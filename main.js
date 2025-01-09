@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/fonts/04B_30__.TTF */ \"./src/assets/fonts/04B_30__.TTF\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `@font-face {\r\n    font-family: pixel;\r\n    src: url(${___CSS_LOADER_URL_REPLACEMENT_0___});\r\n}\r\n\r\n*\r\n{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: pixel;\r\n}\r\n\r\nbody\r\n{\r\n    padding-left: 150px;\r\n    padding-right: 150px;\r\n    display: grid;\r\n    grid-template-rows: 10fr 1fr;\r\n    grid-template-columns: 1fr 1fr;\r\n    column-gap: 40px;\r\n    height: 100vh;\r\n    width: 100vw;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.current_player\r\n{\r\n    justify-self: flex-end;\r\n    grid-row: 1/2;\r\n    grid-column: 1/2;\r\n}\r\n\r\n.opponent_player\r\n{\r\n    justify-self: flex-start;\r\n    grid-row: 1/2;\r\n    grid-column: 2/3;\r\n}\r\n\r\n.control_area\r\n{\r\n    grid-row: 2/3;\r\n    grid-column: 1/3;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: flex-start;\r\n    gap: 10px;\r\n}\r\n\r\n.gameboard\r\n{\r\n    height: 600px;\r\n    width: 600px;\r\n    border: 5px solid #0a3556;\r\n    box-sizing: content-box;\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.grid_row\r\n{\r\n    display: flex;\r\n    flex: 1;\r\n}\r\n\r\n.grid_square\r\n{\r\n    flex: 1;\r\n    border: 1px solid #0a3556;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.grid_square.miss\r\n{\r\n    background-color: darkgray;\r\n}\r\n\r\n.opponent_player .grid_square.hit\r\n{\r\n    background-color: rgb(206, 112, 112);\r\n}\r\n\r\n.grid_square.sunk\r\n{\r\n    background-color: rgb(101, 38, 38);\r\n}\r\n\r\n.buttons\r\n{\r\n    margin-bottom: 20px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 10px;\r\n}\r\n\r\n.buttons button\r\n{\r\n    border-radius: 20px;\r\n    background-color: #0a3556;\r\n    color: aliceblue;\r\n    height: 40px;\r\n    width: 120px;\r\n}\r\n\r\n.ships_select\r\n{\r\n    height: 80px;\r\n}\r\n\r\n.ships_select img\r\n{\r\n    height: 60px;\r\n    width: auto;\r\n}\r\n\r\n.ships_select img.selected\r\n{\r\n    border: 4px solid #0a3556;\r\n    border-radius: 20px;\r\n}\r\n\r\ndialog\r\n{\r\n    height: 100vh;\r\n    width: 100vw;\r\n    background-color: #ffffff00;\r\n    border: none;\r\n}\r\n\r\n.modaldiv\r\n{\r\n    margin:auto;\r\n    margin-top: 150px;\r\n    background-color: aliceblue;\r\n    border-radius: 20px;\r\n    border: 2px solid #0a3556;\r\n    height: 500px;\r\n    width: 450px;\r\n    display: grid;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n#human_choice input,#computer_choice input\r\n{\r\n    height: 20px;\r\n    width: 20px;\r\n    border: 2px solid #0a3556;\r\n}\r\n\r\n#human_choice p,#computer_choice p\r\n{\r\n    display: inline;\r\n}\r\n\r\n#hidemodal\r\n{\r\n    border-radius: 20px;\r\n    background-color: #0a3556;\r\n    color: aliceblue;\r\n    height: 40px;\r\n    width: 120px;\r\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://battleship/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/fonts/04B_30__.TTF */ \"./src/assets/fonts/04B_30__.TTF\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `@font-face {\r\n    font-family: pixel;\r\n    src: url(${___CSS_LOADER_URL_REPLACEMENT_0___});\r\n}\r\n\r\n*\r\n{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: pixel;\r\n}\r\n\r\nbody\r\n{\r\n    padding-left: 150px;\r\n    padding-right: 150px;\r\n    display: grid;\r\n    grid-template-rows: 10fr 1fr;\r\n    grid-template-columns: 1fr 1fr;\r\n    column-gap: 40px;\r\n    height: 100vh;\r\n    width: 100vw;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.current_player\r\n{\r\n    justify-self: flex-end;\r\n    grid-row: 1/2;\r\n    grid-column: 1/2;\r\n}\r\n\r\n.opponent_player\r\n{\r\n    justify-self: flex-start;\r\n    grid-row: 1/2;\r\n    grid-column: 2/3;\r\n}\r\n\r\n.control_area\r\n{\r\n    grid-row: 2/3;\r\n    grid-column: 1/3;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: flex-start;\r\n    gap: 10px;\r\n}\r\n\r\n.directions\r\n{\r\n    align-self: center;\r\n    justify-self: center;\r\n    height: 100%;\r\n    width: 100%;\r\n    font-family: pixel;\r\n    color: #0a3556;\r\n    font-size: 30px;\r\n    text-align: center;\r\n}\r\n\r\n.gameboard\r\n{\r\n    height: 600px;\r\n    width: 600px;\r\n    border: 5px solid #0a3556;\r\n    box-sizing: content-box;\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.grid_row\r\n{\r\n    display: flex;\r\n    flex: 1;\r\n}\r\n\r\n.grid_square\r\n{\r\n    flex: 1;\r\n    border: 1px solid #0a3556;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.grid_square.miss\r\n{\r\n    background-color: darkgray;\r\n}\r\n\r\n.opponent_player .grid_square.hit\r\n{\r\n    background-color: rgb(206, 112, 112);\r\n}\r\n\r\n.grid_square.sunk\r\n{\r\n    background-color: rgb(101, 38, 38);\r\n}\r\n\r\n.buttons\r\n{\r\n    margin-bottom: 20px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 10px;\r\n}\r\n\r\n.buttons button\r\n{\r\n    border-radius: 20px;\r\n    background-color: #0a3556;\r\n    color: aliceblue;\r\n    height: 40px;\r\n    width: 120px;\r\n}\r\n\r\n.ships_select\r\n{\r\n    height: 80px;\r\n}\r\n\r\n.ships_select img\r\n{\r\n    height: 60px;\r\n    width: auto;\r\n}\r\n\r\n.ships_select img.selected\r\n{\r\n    border: 4px solid #0a3556;\r\n    border-radius: 20px;\r\n}\r\n\r\ndialog\r\n{\r\n    height: 100vh;\r\n    width: 100vw;\r\n    background-color: #ffffff00;\r\n    border: none;\r\n}\r\n\r\n.modaldiv\r\n{\r\n    margin:auto;\r\n    margin-top: 150px;\r\n    background-color: aliceblue;\r\n    border-radius: 20px;\r\n    border: 2px solid #0a3556;\r\n    height: 500px;\r\n    width: 450px;\r\n    display: grid;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n#human_choice input,#computer_choice input\r\n{\r\n    height: 20px;\r\n    width: 20px;\r\n    border: 2px solid #0a3556;\r\n}\r\n\r\n#human_choice p,#computer_choice p\r\n{\r\n    display: inline;\r\n}\r\n\r\n#hidemodal\r\n{\r\n    border-radius: 20px;\r\n    background-color: #0a3556;\r\n    color: aliceblue;\r\n    height: 40px;\r\n    width: 120px;\r\n}\r\n\r\n.op img\r\n{\r\n    height: 54px;\r\n    width: 54px;\r\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://battleship/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Gameboard: () => (/* binding */ Gameboard)\n/* harmony export */ });\n/* harmony import */ var _ship_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ship.js */ \"./src/ship.js\");\n\r\n\r\n// spaces: -1=empty, 0-9=ship no., 10-19=hit, -2=miss\r\n\r\nclass Gameboard\r\n{\r\n    constructor()\r\n    {\r\n        this.spaces=[];\r\n        this.initSpaces();\r\n        this.shipCoords=[[],[],[],[],[],[],[],[],[],[]];\r\n        this.sunkCount=0;\r\n        this.ships=[];\r\n    }\r\n    initSpaces()\r\n    {\r\n        for(var i=0;i<=9;i++)\r\n        {\r\n            this.spaces[i]=[];\r\n            for(var j=0;j<=9;j++)\r\n            {\r\n                this.spaces[i].push(-1);\r\n            }\r\n        }\r\n    }\r\n    placeShip(length,angle,x,y,name)\r\n    {\r\n        if(angle!=\"vertical\")\r\n        {\r\n            if(y+length-1<=9&&(y>=0&&y<=9)&&(x>=0&&x<=9))\r\n            {\r\n                var i,flag=true;\r\n                let count=this.ships.length;\r\n                for(i=y;i<y+length;i++)\r\n                {\r\n                    if(this.spaces[x][i]!=-1)\r\n                    {\r\n                        flag=false;\r\n                        break;\r\n                    }\r\n                }\r\n                if(!flag)\r\n                    return false;\r\n                this.ships.push(new _ship_js__WEBPACK_IMPORTED_MODULE_0__.Ship(length,name));\r\n                for(i=y;i<y+length;i++)\r\n                    {\r\n                        this.spaces[x][i]=count;\r\n                        this.shipCoords[count].push([x,i]);\r\n                        this.ships[count].coords.push([x,i]);\r\n                    }\r\n                    return true;\r\n            }\r\n        }\r\n        else\r\n            {\r\n                if(x+length-1<=9&&(y>=0&&y<=9)&&(x>=0&&x<=9))\r\n                {\r\n                    var i,flag=true;\r\n                    let count=this.ships.length;\r\n                    for(i=x;i<x+length;i++)\r\n                    {\r\n                        if(this.spaces[i][y]!=-1)\r\n                        {\r\n                            flag=false;\r\n                            break;\r\n                        }\r\n                    }\r\n                    if(!flag)\r\n                        return false;\r\n                    this.ships.push(new _ship_js__WEBPACK_IMPORTED_MODULE_0__.Ship(length,name));\r\n                    for(i=x;i<x+length;i++)\r\n                        {\r\n                            this.spaces[i][y]=count;\r\n                            this.shipCoords[count].push([i,y]);\r\n                            this.ships[count].coords.push([i,y]);\r\n                        }\r\n                        return true;\r\n                }\r\n            }\r\n    }\r\n    removeShip(length,angle,x,y,name)\r\n    {\r\n                let count;\r\n                for(i=0;i<10;i++)\r\n                {\r\n                    if(this.shipCoords[i].length==0)\r\n                        continue;\r\n                    if(this.shipCoords[i][0][0]==x&&this.shipCoords[i][0][1]==y)\r\n                        break;\r\n                }\r\n                count=i;\r\n        if(angle!=\"vertical\")\r\n        {\r\n            if(y+length-1<=9&&(y>=0&&y<=9)&&(x>=0&&x<=9))\r\n            {\r\n                var i;\r\n                for(i=y;i<y+length;i++)\r\n                    {\r\n                        this.spaces[x][i]=-1;\r\n                    }\r\n                    this.shipCoords[count]=[];\r\n                    this.ships.splice(1,count);\r\n                    return true;\r\n            }\r\n            return false;\r\n        }\r\n        else\r\n            {\r\n                    if(x+length-1<=9&&(y>=0&&y<=9)&&(x>=0&&x<=9))\r\n                        {\r\n                            var i;\r\n                            for(i=x;i<x+length;i++)\r\n                                {\r\n                                    this.spaces[i][y]=-1;\r\n                                }\r\n                                this.shipCoords[count]=[];\r\n                                this.ships.splice(1,count);\r\n                                return true;\r\n                        }\r\n                        return false;\r\n            }\r\n    }\r\n    receiveAttack(x,y)\r\n    {\r\n        let val=this.spaces[x][y];\r\n        if(val==-1)\r\n        {\r\n            this.spaces[x][y]=-2;\r\n            return 'miss';\r\n        }\r\n        if(val==-2||val>=10&&val<=19)\r\n        {\r\n            return null;\r\n        }\r\n        if(val>=0&&val<=9)\r\n        {\r\n            this.ships[val].hit();\r\n            this.spaces[x][y]=val+10;\r\n            if(this.ships[val].isSunk())\r\n            {\r\n                this.sunkCount=this.sunkCount+1;\r\n                return 'sunk';\r\n            }\r\n            return 'hit';\r\n        }\r\n    }\r\n    allSunk()\r\n    {\r\n        if(this.sunkCount>=10)\r\n            return true;\r\n        return false;\r\n    }\r\n}\r\n\r\n\r\n/*\r\n\r\nships info\r\n\r\n0 carrier - amount 1 - size 5\r\n\r\n1 battleship - amount 2 - size 4\r\n\r\n2 submarine - amount 2 - size 3\r\n\r\n3 cruiser - amount 1 - size 3\r\n\r\n4 destroyer - amount 4 - size 2\r\n\r\n*/\n\n//# sourceURL=webpack://battleship/./src/gameboard.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Gameboard: () => (/* binding */ Gameboard)\n/* harmony export */ });\n/* harmony import */ var _ship_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ship.js */ \"./src/ship.js\");\n\r\n\r\n// spaces: -1=empty, 0-9=ship no., 10-19=hit, -2=miss\r\n\r\nclass Gameboard\r\n{\r\n    constructor()\r\n    {\r\n        this.spaces=[];\r\n        this.initSpaces();\r\n        this.shipCoords=[[],[],[],[],[],[],[],[],[],[]];\r\n        this.sunkCount=0;\r\n        this.ships=[];\r\n    }\r\n    initSpaces()\r\n    {\r\n        for(var i=0;i<=9;i++)\r\n        {\r\n            this.spaces[i]=[];\r\n            for(var j=0;j<=9;j++)\r\n            {\r\n                this.spaces[i].push(-1);\r\n            }\r\n        }\r\n    }\r\n    placeShip(length,angle,x,y,name)\r\n    {\r\n        if(angle!=\"vertical\")\r\n        {\r\n            if(y+length-1<=9&&(y>=0&&y<=9)&&(x>=0&&x<=9))\r\n            {\r\n                var i,flag=true;\r\n                let count=this.ships.length;\r\n                for(i=y;i<y+length;i++)\r\n                {\r\n                    if(this.spaces[x][i]!=-1)\r\n                    {\r\n                        flag=false;\r\n                        break;\r\n                    }\r\n                }\r\n                if(!flag)\r\n                    return false;\r\n                this.ships.push(new _ship_js__WEBPACK_IMPORTED_MODULE_0__.Ship(length,name,\"horizontal\"));\r\n                for(i=y;i<y+length;i++)\r\n                    {\r\n                        this.spaces[x][i]=count;\r\n                        this.shipCoords[count].push([x,i]);\r\n                        this.ships[count].coords.push([x,i]);\r\n                    }\r\n                    return true;\r\n            }\r\n        }\r\n        else\r\n            {\r\n                if(x+length-1<=9&&(y>=0&&y<=9)&&(x>=0&&x<=9))\r\n                {\r\n                    var i,flag=true;\r\n                    let count=this.ships.length;\r\n                    for(i=x;i<x+length;i++)\r\n                    {\r\n                        if(this.spaces[i][y]!=-1)\r\n                        {\r\n                            flag=false;\r\n                            break;\r\n                        }\r\n                    }\r\n                    if(!flag)\r\n                        return false;\r\n                    this.ships.push(new _ship_js__WEBPACK_IMPORTED_MODULE_0__.Ship(length,name,\"vertical\"));\r\n                    for(i=x;i<x+length;i++)\r\n                        {\r\n                            this.spaces[i][y]=count;\r\n                            this.shipCoords[count].push([i,y]);\r\n                            this.ships[count].coords.push([i,y]);\r\n                        }\r\n                        return true;\r\n                }\r\n            }\r\n    }\r\n    removeShip(length,angle,x,y,name)\r\n    {\r\n                let count;\r\n                for(i=0;i<10;i++)\r\n                {\r\n                    if(this.shipCoords[i].length==0)\r\n                        continue;\r\n                    if(this.shipCoords[i][0][0]==x&&this.shipCoords[i][0][1]==y)\r\n                        break;\r\n                }\r\n                count=i;\r\n        if(angle!=\"vertical\")\r\n        {\r\n            if(y+length-1<=9&&(y>=0&&y<=9)&&(x>=0&&x<=9))\r\n            {\r\n                var i;\r\n                for(i=y;i<y+length;i++)\r\n                    {\r\n                        this.spaces[x][i]=-1;\r\n                    }\r\n                    this.shipCoords[count]=[];\r\n                    this.ships.splice(1,count);\r\n                    return true;\r\n            }\r\n            return false;\r\n        }\r\n        else\r\n            {\r\n                    if(x+length-1<=9&&(y>=0&&y<=9)&&(x>=0&&x<=9))\r\n                        {\r\n                            var i;\r\n                            for(i=x;i<x+length;i++)\r\n                                {\r\n                                    this.spaces[i][y]=-1;\r\n                                }\r\n                                this.shipCoords[count]=[];\r\n                                this.ships.splice(1,count);\r\n                                return true;\r\n                        }\r\n                        return false;\r\n            }\r\n    }\r\n    receiveAttack(x,y)\r\n    {\r\n        let val=this.spaces[x][y];\r\n        if(val==-1)\r\n        {\r\n            this.spaces[x][y]=-2;\r\n            return 'miss';\r\n        }\r\n        if(val==-2||(val>=10&&val<=19))\r\n        {\r\n            return null;\r\n        }\r\n        if(val>=0&&val<=9)\r\n        {\r\n            this.ships[val].hit();\r\n            this.spaces[x][y]=val+10;\r\n            if(this.ships[val].isSunk())\r\n            {\r\n                this.sunkCount=this.sunkCount+1;\r\n                return 'Sunk '+this.ships[val].name+'!';\r\n            }\r\n            return 'hit';\r\n        }\r\n    }\r\n    allSunk()\r\n    {\r\n        if(this.sunkCount>=10)\r\n            return true;\r\n        return false;\r\n    }\r\n}\r\n\r\n\r\n/*\r\n\r\nships info\r\n\r\n0 carrier - amount 1 - size 5\r\n\r\n1 battleship - amount 2 - size 4\r\n\r\n2 submarine - amount 2 - size 3\r\n\r\n3 cruiser - amount 1 - size 3\r\n\r\n4 destroyer - amount 4 - size 2\r\n\r\n*/\n\n//# sourceURL=webpack://battleship/./src/gameboard.js?");
 
 /***/ }),
 
@@ -146,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _assets_pngs_carrier_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/pngs/carrier.png */ \"./src/assets/pngs/carrier.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_1_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_1.png */ \"./src/assets/pngs/carrier_horizontal_1.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_2_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_2.png */ \"./src/assets/pngs/carrier_horizontal_2.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_3_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_3.png */ \"./src/assets/pngs/carrier_horizontal_3.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_4_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_4.png */ \"./src/assets/pngs/carrier_horizontal_4.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_5_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_5.png */ \"./src/assets/pngs/carrier_horizontal_5.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_1_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_1.png */ \"./src/assets/pngs/carrier_vertical_1.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_2_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_2.png */ \"./src/assets/pngs/carrier_vertical_2.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_3_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_3.png */ \"./src/assets/pngs/carrier_vertical_3.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_4_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_4.png */ \"./src/assets/pngs/carrier_vertical_4.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_5_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_5.png */ \"./src/assets/pngs/carrier_vertical_5.png\");\n/* harmony import */ var _assets_pngs_battleship_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./assets/pngs/battleship.png */ \"./src/assets/pngs/battleship.png\");\n/* harmony import */ var _assets_pngs_battleship_horizontal_1_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./assets/pngs/battleship_horizontal_1.png */ \"./src/assets/pngs/battleship_horizontal_1.png\");\n/* harmony import */ var _assets_pngs_battleship_horizontal_2_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./assets/pngs/battleship_horizontal_2.png */ \"./src/assets/pngs/battleship_horizontal_2.png\");\n/* harmony import */ var _assets_pngs_battleship_horizontal_3_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./assets/pngs/battleship_horizontal_3.png */ \"./src/assets/pngs/battleship_horizontal_3.png\");\n/* harmony import */ var _assets_pngs_battleship_horizontal_4_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./assets/pngs/battleship_horizontal_4.png */ \"./src/assets/pngs/battleship_horizontal_4.png\");\n/* harmony import */ var _assets_pngs_battleship_vertical_1_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./assets/pngs/battleship_vertical_1.png */ \"./src/assets/pngs/battleship_vertical_1.png\");\n/* harmony import */ var _assets_pngs_battleship_vertical_2_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./assets/pngs/battleship_vertical_2.png */ \"./src/assets/pngs/battleship_vertical_2.png\");\n/* harmony import */ var _assets_pngs_battleship_vertical_3_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./assets/pngs/battleship_vertical_3.png */ \"./src/assets/pngs/battleship_vertical_3.png\");\n/* harmony import */ var _assets_pngs_battleship_vertical_4_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./assets/pngs/battleship_vertical_4.png */ \"./src/assets/pngs/battleship_vertical_4.png\");\n/* harmony import */ var _assets_pngs_cruiser_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./assets/pngs/cruiser.png */ \"./src/assets/pngs/cruiser.png\");\n/* harmony import */ var _assets_pngs_cruiser_horizontal_1_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./assets/pngs/cruiser_horizontal_1.png */ \"./src/assets/pngs/cruiser_horizontal_1.png\");\n/* harmony import */ var _assets_pngs_cruiser_horizontal_2_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./assets/pngs/cruiser_horizontal_2.png */ \"./src/assets/pngs/cruiser_horizontal_2.png\");\n/* harmony import */ var _assets_pngs_cruiser_horizontal_3_png__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./assets/pngs/cruiser_horizontal_3.png */ \"./src/assets/pngs/cruiser_horizontal_3.png\");\n/* harmony import */ var _assets_pngs_cruiser_vertical_1_png__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./assets/pngs/cruiser_vertical_1.png */ \"./src/assets/pngs/cruiser_vertical_1.png\");\n/* harmony import */ var _assets_pngs_cruiser_vertical_2_png__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./assets/pngs/cruiser_vertical_2.png */ \"./src/assets/pngs/cruiser_vertical_2.png\");\n/* harmony import */ var _assets_pngs_cruiser_vertical_3_png__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./assets/pngs/cruiser_vertical_3.png */ \"./src/assets/pngs/cruiser_vertical_3.png\");\n/* harmony import */ var _assets_pngs_submarine_png__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./assets/pngs/submarine.png */ \"./src/assets/pngs/submarine.png\");\n/* harmony import */ var _assets_pngs_submarine_horizontal_1_png__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./assets/pngs/submarine_horizontal_1.png */ \"./src/assets/pngs/submarine_horizontal_1.png\");\n/* harmony import */ var _assets_pngs_submarine_horizontal_2_png__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./assets/pngs/submarine_horizontal_2.png */ \"./src/assets/pngs/submarine_horizontal_2.png\");\n/* harmony import */ var _assets_pngs_submarine_horizontal_3_png__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./assets/pngs/submarine_horizontal_3.png */ \"./src/assets/pngs/submarine_horizontal_3.png\");\n/* harmony import */ var _assets_pngs_submarine_vertical_1_png__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./assets/pngs/submarine_vertical_1.png */ \"./src/assets/pngs/submarine_vertical_1.png\");\n/* harmony import */ var _assets_pngs_submarine_vertical_2_png__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./assets/pngs/submarine_vertical_2.png */ \"./src/assets/pngs/submarine_vertical_2.png\");\n/* harmony import */ var _assets_pngs_submarine_vertical_3_png__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./assets/pngs/submarine_vertical_3.png */ \"./src/assets/pngs/submarine_vertical_3.png\");\n/* harmony import */ var _assets_pngs_destroyer_png__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./assets/pngs/destroyer.png */ \"./src/assets/pngs/destroyer.png\");\n/* harmony import */ var _assets_pngs_destroyer_horizontal_1_png__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./assets/pngs/destroyer_horizontal_1.png */ \"./src/assets/pngs/destroyer_horizontal_1.png\");\n/* harmony import */ var _assets_pngs_destroyer_horizontal_2_png__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./assets/pngs/destroyer_horizontal_2.png */ \"./src/assets/pngs/destroyer_horizontal_2.png\");\n/* harmony import */ var _assets_pngs_destroyer_vertical_1_png__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./assets/pngs/destroyer_vertical_1.png */ \"./src/assets/pngs/destroyer_vertical_1.png\");\n/* harmony import */ var _assets_pngs_destroyer_vertical_2_png__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./assets/pngs/destroyer_vertical_2.png */ \"./src/assets/pngs/destroyer_vertical_2.png\");\n/* harmony import */ var _events_js__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./events.js */ \"./src/events.js\");\n/* harmony import */ var _player_js__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./player.js */ \"./src/player.js\");\n/* harmony import */ var _gameboard_js__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./gameboard.js */ \"./src/gameboard.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nvar ship_names=[\"carrier\",\"battleship\",\"cruiser\",\"submarine\",\"destroyer\"];\r\nvar ship_pngs=[_assets_pngs_carrier_png__WEBPACK_IMPORTED_MODULE_1__,_assets_pngs_battleship_png__WEBPACK_IMPORTED_MODULE_12__,_assets_pngs_cruiser_png__WEBPACK_IMPORTED_MODULE_21__,_assets_pngs_submarine_png__WEBPACK_IMPORTED_MODULE_28__,_assets_pngs_destroyer_png__WEBPACK_IMPORTED_MODULE_35__];\r\nvar ship_lengths=[5,4,3,3,2];\r\nvar ship_h_pngs=[];\r\nvar ship_v_pngs=[];\r\nvar gameStart=false;\r\nvar lastDragged;\r\nvar player1,player2;\r\nvar shipCount=[1,2,1,2,4];\r\nvar shipIds=[[1],[1,2],[1],[1,2],[1,2,3,4]];\r\nplayer1=new _player_js__WEBPACK_IMPORTED_MODULE_41__.Player(\"human\");\r\n\r\nfunction initForNewGame()\r\n{\r\n    lastDragged=null;\r\n    player1=new _player_js__WEBPACK_IMPORTED_MODULE_41__.Player(\"human\");\r\n    player2=null;\r\n    shipCount=[1,2,1,2,4];\r\n    document.querySelectorAll(\".select\").forEach(i=>{\r\n        i.hidden=false;\r\n    });\r\n    shipIds=[[1],[1,2],[1],[1,2],[1,2,3,4]];\r\n}\r\n\r\ndocument.querySelector(\"#startgame\").addEventListener(\"click\",(e)=>{\r\n    if(player1.gameboard.ships.length==10)\r\n    {\r\n        document.querySelector(\".optionDialog\").showModal();\r\n    }\r\n});\r\n\r\nfunction initShipsOrienPNGs()\r\n{\r\n    ship_h_pngs[0]=[_assets_pngs_carrier_horizontal_1_png__WEBPACK_IMPORTED_MODULE_2__,_assets_pngs_carrier_horizontal_2_png__WEBPACK_IMPORTED_MODULE_3__,_assets_pngs_carrier_horizontal_3_png__WEBPACK_IMPORTED_MODULE_4__,_assets_pngs_carrier_horizontal_4_png__WEBPACK_IMPORTED_MODULE_5__,_assets_pngs_carrier_horizontal_5_png__WEBPACK_IMPORTED_MODULE_6__];\r\n    ship_h_pngs[1]=[_assets_pngs_battleship_horizontal_1_png__WEBPACK_IMPORTED_MODULE_13__,_assets_pngs_battleship_horizontal_2_png__WEBPACK_IMPORTED_MODULE_14__,_assets_pngs_battleship_horizontal_3_png__WEBPACK_IMPORTED_MODULE_15__,_assets_pngs_battleship_horizontal_4_png__WEBPACK_IMPORTED_MODULE_16__];\r\n    ship_h_pngs[2]=[_assets_pngs_cruiser_horizontal_1_png__WEBPACK_IMPORTED_MODULE_22__,_assets_pngs_cruiser_horizontal_2_png__WEBPACK_IMPORTED_MODULE_23__,_assets_pngs_cruiser_horizontal_3_png__WEBPACK_IMPORTED_MODULE_24__];\r\n    ship_h_pngs[3]=[_assets_pngs_submarine_horizontal_1_png__WEBPACK_IMPORTED_MODULE_29__,_assets_pngs_submarine_horizontal_2_png__WEBPACK_IMPORTED_MODULE_30__,_assets_pngs_submarine_horizontal_3_png__WEBPACK_IMPORTED_MODULE_31__];\r\n    ship_h_pngs[4]=[_assets_pngs_destroyer_horizontal_1_png__WEBPACK_IMPORTED_MODULE_36__,_assets_pngs_destroyer_horizontal_2_png__WEBPACK_IMPORTED_MODULE_37__];\r\n    ship_v_pngs[0]=[_assets_pngs_carrier_vertical_1_png__WEBPACK_IMPORTED_MODULE_7__,_assets_pngs_carrier_vertical_2_png__WEBPACK_IMPORTED_MODULE_8__,_assets_pngs_carrier_vertical_3_png__WEBPACK_IMPORTED_MODULE_9__,_assets_pngs_carrier_vertical_4_png__WEBPACK_IMPORTED_MODULE_10__,_assets_pngs_carrier_vertical_5_png__WEBPACK_IMPORTED_MODULE_11__];\r\n    ship_v_pngs[1]=[_assets_pngs_battleship_vertical_1_png__WEBPACK_IMPORTED_MODULE_17__,_assets_pngs_battleship_vertical_2_png__WEBPACK_IMPORTED_MODULE_18__,_assets_pngs_battleship_vertical_3_png__WEBPACK_IMPORTED_MODULE_19__,_assets_pngs_battleship_vertical_4_png__WEBPACK_IMPORTED_MODULE_20__];\r\n    ship_v_pngs[2]=[_assets_pngs_cruiser_vertical_1_png__WEBPACK_IMPORTED_MODULE_25__,_assets_pngs_cruiser_vertical_2_png__WEBPACK_IMPORTED_MODULE_26__,_assets_pngs_cruiser_vertical_3_png__WEBPACK_IMPORTED_MODULE_27__];\r\n    ship_v_pngs[3]=[_assets_pngs_submarine_vertical_1_png__WEBPACK_IMPORTED_MODULE_32__,_assets_pngs_submarine_vertical_2_png__WEBPACK_IMPORTED_MODULE_33__,_assets_pngs_submarine_vertical_3_png__WEBPACK_IMPORTED_MODULE_34__];\r\n    ship_v_pngs[4]=[_assets_pngs_destroyer_vertical_1_png__WEBPACK_IMPORTED_MODULE_38__,_assets_pngs_destroyer_vertical_2_png__WEBPACK_IMPORTED_MODULE_39__];\r\n}\r\ninitShipsOrienPNGs();\r\n\r\ndocument.addEventListener(\"dragstart\",function(event){\r\n    lastDragged=event.target;\r\n});\r\n\r\nfunction allowDrop(e)\r\n{\r\n    if(lastDragged.classList.contains(\"select\"))\r\n        e.preventDefault();\r\n}\r\n\r\nfunction addShip(e)\r\n{\r\n    e.preventDefault();\r\n    if(e.target.classList.contains(\"cp\"))\r\n    {\r\n        let box=e.target;\r\n        let index_i=parseInt(box.classList[2].charAt(1));\r\n        let index_j=parseInt(box.classList[2].charAt(3));\r\n        let ans=player1.gameboard.placeShip(parseInt(lastDragged.id),(!_events_js__WEBPACK_IMPORTED_MODULE_40__.orient_flag)?\"horizontal\":\"vertical\",index_i,index_j,lastDragged.classList[0]);\r\n        if(ans)\r\n        {\r\n            let name=lastDragged.classList[0];\r\n            let orien=(!_events_js__WEBPACK_IMPORTED_MODULE_40__.orient_flag)?\"horizontal\":\"vertical\";\r\n            if(orien==\"horizontal\")\r\n            {\r\n                let cid=shipIds[ship_names.indexOf(name)].pop();\r\n                for(let i=1;i<=parseInt(lastDragged.id);i++)\r\n                {\r\n                    let img=new Image();\r\n                    img.className=name;\r\n                    img.classList.add(\"no\"+i,\"horizontal\",\"id\"+cid);\r\n                    img.src=ship_h_pngs[ship_names.indexOf(name)][i-1];\r\n                    box=document.querySelector(\".i\"+index_i+\"j\"+(index_j+i-1));\r\n                    img.style.height=\"54px\";\r\n                    img.style.width=\"54px\";\r\n                    img.addEventListener(\"click\",(e)=>{\r\n                        if(!gameStart)\r\n                        {\r\n                            let n=e.target.classList[0];\r\n                            let id=e.target.classList[3];\r\n                            let f=document.querySelector(\".no1.\"+n+\".\"+id);\r\n                            player1.gameboard.removeShip(ship_lengths[ship_names.indexOf(n)],e.target.classList[2],parseInt(f.parentElement.classList[2].charAt(1)),parseInt(f.parentElement.classList[2].charAt(3)),n);\r\n                            document.querySelectorAll(\".\"+n+\".horizontal.\"+id).forEach(i=>{\r\n                                i.remove();\r\n                            });\r\n                            let ind=ship_names.indexOf(n);\r\n                            shipCount[ind]=shipCount[ind]+1;\r\n                            if(shipCount[ind]==1)\r\n                            {\r\n                                document.querySelector(\".\"+n+\".select\").hidden=false;\r\n                            }\r\n                            shipIds[ind].push(parseInt(id.charAt(2)));\r\n                        }\r\n                    });\r\n                    box.appendChild(img);\r\n                }\r\n            }\r\n            else\r\n                {\r\n                    let cid=shipIds[ship_names.indexOf(name)].pop();\r\n                    for(let i=1;i<=parseInt(lastDragged.id);i++)\r\n                    {\r\n                        let img=new Image();\r\n                        img.className=name;\r\n                        img.classList.add(\"no\"+i,\"vertical\",\"id\"+cid);\r\n                        img.src=ship_v_pngs[ship_names.indexOf(name)][i-1];\r\n                        box=document.querySelector(\".i\"+(index_i+i-1)+\"j\"+index_j);\r\n                        img.style.height=\"54px\";\r\n                        img.style.width=\"54px\";\r\n                        img.addEventListener(\"click\",(e)=>{\r\n                            if(!gameStart)\r\n                            {\r\n                                let n=e.target.classList[0];\r\n                                let id=e.target.classList[3];\r\n                                let f=document.querySelector(\".no1.\"+n+\".\"+id);\r\n                                player1.gameboard.removeShip(ship_lengths[ship_names.indexOf(n)],e.target.classList[2],parseInt(f.parentElement.classList[2].charAt(1)),parseInt(f.parentElement.classList[2].charAt(3)),n);\r\n                                document.querySelectorAll(\".\"+n+\".vertical.\"+id).forEach(i=>{\r\n                                    i.remove();\r\n                                });\r\n                                let ind=ship_names.indexOf(n);\r\n                                shipCount[ind]=shipCount[ind]+1;\r\n                                if(shipCount[ind]==1)\r\n                                {\r\n                                    document.querySelector(\".\"+n+\".select\").hidden=false;\r\n                                }\r\n                                shipIds[ind].push(parseInt(id.charAt(2)));\r\n                            }\r\n                        });\r\n                        box.appendChild(img);\r\n                    }\r\n                }\r\n            let ind=ship_names.indexOf(name);\r\n            shipCount[ind]=shipCount[ind]-1;\r\n            if(shipCount[ind]==0)\r\n            {\r\n                document.querySelector(\".\"+name+\".select\").hidden=true;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\ndocument.querySelector(\".randomize\").addEventListener(\"click\",e=>{\r\n    if(!gameStart)\r\n    {\r\n        player1=new _player_js__WEBPACK_IMPORTED_MODULE_41__.Player(\"human\");\r\n        player1.gameboard=randomPlacement();\r\n        displayShips(player1.gameboard);\r\n    }\r\n});\r\n\r\nfunction initDragDrop()\r\n{\r\n    let squares=document.querySelectorAll(\".grid_square\");\r\n    for(let i=0;i<squares.length;i++)\r\n    {\r\n        squares[i].ondragover=allowDrop;\r\n        squares[i].ondrop=addShip;\r\n    }\r\n    let ships=document.querySelectorAll(\".select\");\r\n    for(let i=0;i<ships.length;i++)\r\n    {\r\n        ships[i].draggable=true;\r\n    }\r\n}\r\n\r\ninitDragDrop();\r\n\r\nfunction initSelectMenu()\r\n{\r\n    for(var i=0;i<5;i++)\r\n    {\r\n        var q=\".\"+ship_names[i];\r\n        let img=ship_pngs[i];\r\n        document.querySelector(q).src=img;\r\n    }\r\n}\r\n\r\ninitSelectMenu();\r\n\r\nfunction randomPlacement()\r\n{\r\n    let gb=new _gameboard_js__WEBPACK_IMPORTED_MODULE_42__.Gameboard();\r\n    let lengths=[5,4,4,3,3,3,2,2,2,2];\r\n    let ships=[\"Carrier\",\"Battleship\",\"Battleship\",\"Cruiser\",\"Submarine\",\"Submarine\",\"Destroyer\",\"Destroyer\",\"Destroyer\",\"Destroyer\"];\r\n    let c=0;\r\n    while(gb.ships.length!=10)\r\n    {\r\n        let i = Math.floor(Math.random() * 9);\r\n        let j = Math.floor(Math.random() * 9);\r\n        let a =Math.floor(Math.random() * 100);\r\n        if(a<50)\r\n            a=\"horizontal\";\r\n        else\r\n            a=\"vertical\";\r\n        let f=gb.placeShip(lengths[c],a,i,j,ships[c]);\r\n        if(f)\r\n            c++;\r\n    }\r\n    return gb;\r\n}\r\n\r\nfunction displayShips(gb)\r\n{\r\n    resetGameBoard();\r\n    for(let i=0;i<10;i++)\r\n    {\r\n        if(gb.shipCoords[i][1][1]==gb.shipCoords[i][0][1]+1)\r\n        {\r\n            let cid=shipIds[ship_names.indexOf((gb.ships[i].name).toLowerCase())].pop();\r\n            for(let j=0;j<gb.ships[i].length;j++)\r\n            {\r\n                let box=document.querySelector(\".i\"+gb.shipCoords[i][j][0]+\"j\"+gb.shipCoords[i][j][1]);\r\n                let img=new Image();\r\n                img.className=gb.ships[i].name;\r\n                img.classList.add(\"no\"+(j+1),\"horizontal\",\"id\"+cid);\r\n                img.src=ship_h_pngs[ship_names.indexOf((gb.ships[i].name).toLowerCase())][j];\r\n                img.style.height=\"54px\";\r\n                img.style.width=\"54px\";\r\n                img.addEventListener(\"click\",(e)=>{\r\n                    if(!gameStart)\r\n                    {\r\n                        let n=e.target.classList[0];\r\n                        let id=e.target.classList[3];\r\n                        let f=document.querySelector(\".no1.\"+n+\".\"+id);\r\n                        player1.gameboard.removeShip(ship_lengths[ship_names.indexOf(n)],e.target.classList[2],parseInt(f.parentElement.classList[2].charAt(1)),parseInt(f.parentElement.classList[2].charAt(3)),n);\r\n                        document.querySelectorAll(\".\"+n+\".horizontal.\"+id).forEach(i=>{\r\n                            i.remove();\r\n                        });\r\n                        let ind=ship_names.indexOf(n);\r\n                        shipCount[ind]=shipCount[ind]+1;\r\n                        if(shipCount[ind]==1)\r\n                        {\r\n                            document.querySelector(\".\"+n+\".select\").hidden=false;\r\n                        }\r\n                        shipIds[ind].push(parseInt(id.charAt(2)));\r\n                    }\r\n                });\r\n                box.appendChild(img);\r\n            }\r\n        }\r\n        else\r\n        {\r\n            let cid=shipIds[ship_names.indexOf((gb.ships[i].name).toLowerCase())].pop();\r\n            for(let j=0;j<gb.ships[i].length;j++)\r\n            {\r\n                let box=document.querySelector(\".i\"+gb.shipCoords[i][j][0]+\"j\"+gb.shipCoords[i][j][1]);\r\n                let img=new Image();\r\n                img.className=gb.ships[i].name;\r\n                img.classList.add(\"no\"+(j+1),\"vertical\",\"id\"+cid);\r\n                img.src=ship_v_pngs[ship_names.indexOf((gb.ships[i].name).toLowerCase())][j];\r\n                img.style.height=\"54px\";\r\n                img.style.width=\"54px\";\r\n                img.addEventListener(\"click\",(e)=>{\r\n                    if(!gameStart)\r\n                        {\r\n                            let n=e.target.classList[0];\r\n                            let id=e.target.classList[3];\r\n                            let f=document.querySelector(\".no1.\"+n+\".\"+id);\r\n                            player1.gameboard.removeShip(ship_lengths[ship_names.indexOf(n)],e.target.classList[2],parseInt(f.parentElement.classList[2].charAt(1)),parseInt(f.parentElement.classList[2].charAt(3)),n);\r\n                            document.querySelectorAll(\".\"+n+\".vertical.\"+id).forEach(i=>{\r\n                                i.remove();\r\n                            });\r\n                            let ind=ship_names.indexOf(n);\r\n                            shipCount[ind]=shipCount[ind]+1;\r\n                            if(shipCount[ind]==1)\r\n                            {\r\n                                document.querySelector(\".\"+n+\".select\").hidden=false;\r\n                            }\r\n                            shipIds[ind].push(parseInt(id.charAt(2)));\r\n                        }\r\n                });\r\n                box.appendChild(img);\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\nfunction resetGameBoard()\r\n{\r\n    document.querySelectorAll(\"img\").forEach(i=>{\r\n        if(i.classList.contains(\"select\"))\r\n        {\r\n            i.hidden=true;\r\n        }\r\n        else\r\n        i.remove();\r\n    });\r\n}\r\n\r\ndocument.querySelector(\"#hidemodal\").addEventListener(\"click\",e=>{\r\n    document.querySelector(\"dialog\").close();\r\n});\n\n//# sourceURL=webpack://battleship/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _assets_pngs_carrier_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/pngs/carrier.png */ \"./src/assets/pngs/carrier.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_1_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_1.png */ \"./src/assets/pngs/carrier_horizontal_1.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_2_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_2.png */ \"./src/assets/pngs/carrier_horizontal_2.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_3_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_3.png */ \"./src/assets/pngs/carrier_horizontal_3.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_4_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_4.png */ \"./src/assets/pngs/carrier_horizontal_4.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_5_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_5.png */ \"./src/assets/pngs/carrier_horizontal_5.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_1_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_1.png */ \"./src/assets/pngs/carrier_vertical_1.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_2_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_2.png */ \"./src/assets/pngs/carrier_vertical_2.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_3_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_3.png */ \"./src/assets/pngs/carrier_vertical_3.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_4_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_4.png */ \"./src/assets/pngs/carrier_vertical_4.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_5_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_5.png */ \"./src/assets/pngs/carrier_vertical_5.png\");\n/* harmony import */ var _assets_pngs_battleship_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./assets/pngs/battleship.png */ \"./src/assets/pngs/battleship.png\");\n/* harmony import */ var _assets_pngs_battleship_horizontal_1_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./assets/pngs/battleship_horizontal_1.png */ \"./src/assets/pngs/battleship_horizontal_1.png\");\n/* harmony import */ var _assets_pngs_battleship_horizontal_2_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./assets/pngs/battleship_horizontal_2.png */ \"./src/assets/pngs/battleship_horizontal_2.png\");\n/* harmony import */ var _assets_pngs_battleship_horizontal_3_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./assets/pngs/battleship_horizontal_3.png */ \"./src/assets/pngs/battleship_horizontal_3.png\");\n/* harmony import */ var _assets_pngs_battleship_horizontal_4_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./assets/pngs/battleship_horizontal_4.png */ \"./src/assets/pngs/battleship_horizontal_4.png\");\n/* harmony import */ var _assets_pngs_battleship_vertical_1_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./assets/pngs/battleship_vertical_1.png */ \"./src/assets/pngs/battleship_vertical_1.png\");\n/* harmony import */ var _assets_pngs_battleship_vertical_2_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./assets/pngs/battleship_vertical_2.png */ \"./src/assets/pngs/battleship_vertical_2.png\");\n/* harmony import */ var _assets_pngs_battleship_vertical_3_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./assets/pngs/battleship_vertical_3.png */ \"./src/assets/pngs/battleship_vertical_3.png\");\n/* harmony import */ var _assets_pngs_battleship_vertical_4_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./assets/pngs/battleship_vertical_4.png */ \"./src/assets/pngs/battleship_vertical_4.png\");\n/* harmony import */ var _assets_pngs_cruiser_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./assets/pngs/cruiser.png */ \"./src/assets/pngs/cruiser.png\");\n/* harmony import */ var _assets_pngs_cruiser_horizontal_1_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./assets/pngs/cruiser_horizontal_1.png */ \"./src/assets/pngs/cruiser_horizontal_1.png\");\n/* harmony import */ var _assets_pngs_cruiser_horizontal_2_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./assets/pngs/cruiser_horizontal_2.png */ \"./src/assets/pngs/cruiser_horizontal_2.png\");\n/* harmony import */ var _assets_pngs_cruiser_horizontal_3_png__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./assets/pngs/cruiser_horizontal_3.png */ \"./src/assets/pngs/cruiser_horizontal_3.png\");\n/* harmony import */ var _assets_pngs_cruiser_vertical_1_png__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./assets/pngs/cruiser_vertical_1.png */ \"./src/assets/pngs/cruiser_vertical_1.png\");\n/* harmony import */ var _assets_pngs_cruiser_vertical_2_png__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./assets/pngs/cruiser_vertical_2.png */ \"./src/assets/pngs/cruiser_vertical_2.png\");\n/* harmony import */ var _assets_pngs_cruiser_vertical_3_png__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./assets/pngs/cruiser_vertical_3.png */ \"./src/assets/pngs/cruiser_vertical_3.png\");\n/* harmony import */ var _assets_pngs_submarine_png__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./assets/pngs/submarine.png */ \"./src/assets/pngs/submarine.png\");\n/* harmony import */ var _assets_pngs_submarine_horizontal_1_png__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./assets/pngs/submarine_horizontal_1.png */ \"./src/assets/pngs/submarine_horizontal_1.png\");\n/* harmony import */ var _assets_pngs_submarine_horizontal_2_png__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./assets/pngs/submarine_horizontal_2.png */ \"./src/assets/pngs/submarine_horizontal_2.png\");\n/* harmony import */ var _assets_pngs_submarine_horizontal_3_png__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./assets/pngs/submarine_horizontal_3.png */ \"./src/assets/pngs/submarine_horizontal_3.png\");\n/* harmony import */ var _assets_pngs_submarine_vertical_1_png__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./assets/pngs/submarine_vertical_1.png */ \"./src/assets/pngs/submarine_vertical_1.png\");\n/* harmony import */ var _assets_pngs_submarine_vertical_2_png__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./assets/pngs/submarine_vertical_2.png */ \"./src/assets/pngs/submarine_vertical_2.png\");\n/* harmony import */ var _assets_pngs_submarine_vertical_3_png__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./assets/pngs/submarine_vertical_3.png */ \"./src/assets/pngs/submarine_vertical_3.png\");\n/* harmony import */ var _assets_pngs_destroyer_png__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./assets/pngs/destroyer.png */ \"./src/assets/pngs/destroyer.png\");\n/* harmony import */ var _assets_pngs_destroyer_horizontal_1_png__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./assets/pngs/destroyer_horizontal_1.png */ \"./src/assets/pngs/destroyer_horizontal_1.png\");\n/* harmony import */ var _assets_pngs_destroyer_horizontal_2_png__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./assets/pngs/destroyer_horizontal_2.png */ \"./src/assets/pngs/destroyer_horizontal_2.png\");\n/* harmony import */ var _assets_pngs_destroyer_vertical_1_png__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./assets/pngs/destroyer_vertical_1.png */ \"./src/assets/pngs/destroyer_vertical_1.png\");\n/* harmony import */ var _assets_pngs_destroyer_vertical_2_png__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./assets/pngs/destroyer_vertical_2.png */ \"./src/assets/pngs/destroyer_vertical_2.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_1_hit_png__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_1_hit.png */ \"./src/assets/pngs/carrier_horizontal_1_hit.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_2_hit_png__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_2_hit.png */ \"./src/assets/pngs/carrier_horizontal_2_hit.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_3_hit_png__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_3_hit.png */ \"./src/assets/pngs/carrier_horizontal_3_hit.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_4_hit_png__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_4_hit.png */ \"./src/assets/pngs/carrier_horizontal_4_hit.png\");\n/* harmony import */ var _assets_pngs_carrier_horizontal_5_hit_png__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./assets/pngs/carrier_horizontal_5_hit.png */ \"./src/assets/pngs/carrier_horizontal_5_hit.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_1_hit_png__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_1_hit.png */ \"./src/assets/pngs/carrier_vertical_1_hit.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_2_hit_png__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_2_hit.png */ \"./src/assets/pngs/carrier_vertical_2_hit.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_3_hit_png__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_3_hit.png */ \"./src/assets/pngs/carrier_vertical_3_hit.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_4_hit_png__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_4_hit.png */ \"./src/assets/pngs/carrier_vertical_4_hit.png\");\n/* harmony import */ var _assets_pngs_carrier_vertical_5_hit_png__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./assets/pngs/carrier_vertical_5_hit.png */ \"./src/assets/pngs/carrier_vertical_5_hit.png\");\n/* harmony import */ var _assets_pngs_battleship_horizontal_1_hit_png__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./assets/pngs/battleship_horizontal_1_hit.png */ \"./src/assets/pngs/battleship_horizontal_1_hit.png\");\n/* harmony import */ var _assets_pngs_battleship_horizontal_2_hit_png__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./assets/pngs/battleship_horizontal_2_hit.png */ \"./src/assets/pngs/battleship_horizontal_2_hit.png\");\n/* harmony import */ var _assets_pngs_battleship_horizontal_3_hit_png__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./assets/pngs/battleship_horizontal_3_hit.png */ \"./src/assets/pngs/battleship_horizontal_3_hit.png\");\n/* harmony import */ var _assets_pngs_battleship_horizontal_4_hit_png__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./assets/pngs/battleship_horizontal_4_hit.png */ \"./src/assets/pngs/battleship_horizontal_4_hit.png\");\n/* harmony import */ var _assets_pngs_battleship_vertical_1_hit_png__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./assets/pngs/battleship_vertical_1_hit.png */ \"./src/assets/pngs/battleship_vertical_1_hit.png\");\n/* harmony import */ var _assets_pngs_battleship_vertical_2_hit_png__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./assets/pngs/battleship_vertical_2_hit.png */ \"./src/assets/pngs/battleship_vertical_2_hit.png\");\n/* harmony import */ var _assets_pngs_battleship_vertical_3_hit_png__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./assets/pngs/battleship_vertical_3_hit.png */ \"./src/assets/pngs/battleship_vertical_3_hit.png\");\n/* harmony import */ var _assets_pngs_battleship_vertical_4_hit_png__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./assets/pngs/battleship_vertical_4_hit.png */ \"./src/assets/pngs/battleship_vertical_4_hit.png\");\n/* harmony import */ var _assets_pngs_cruiser_horizontal_1_hit_png__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./assets/pngs/cruiser_horizontal_1_hit.png */ \"./src/assets/pngs/cruiser_horizontal_1_hit.png\");\n/* harmony import */ var _assets_pngs_cruiser_horizontal_2_hit_png__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./assets/pngs/cruiser_horizontal_2_hit.png */ \"./src/assets/pngs/cruiser_horizontal_2_hit.png\");\n/* harmony import */ var _assets_pngs_cruiser_horizontal_3_hit_png__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./assets/pngs/cruiser_horizontal_3_hit.png */ \"./src/assets/pngs/cruiser_horizontal_3_hit.png\");\n/* harmony import */ var _assets_pngs_cruiser_vertical_1_hit_png__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./assets/pngs/cruiser_vertical_1_hit.png */ \"./src/assets/pngs/cruiser_vertical_1_hit.png\");\n/* harmony import */ var _assets_pngs_cruiser_vertical_2_hit_png__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ./assets/pngs/cruiser_vertical_2_hit.png */ \"./src/assets/pngs/cruiser_vertical_2_hit.png\");\n/* harmony import */ var _assets_pngs_cruiser_vertical_3_hit_png__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ./assets/pngs/cruiser_vertical_3_hit.png */ \"./src/assets/pngs/cruiser_vertical_3_hit.png\");\n/* harmony import */ var _assets_pngs_submarine_horizontal_1_hit_png__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ./assets/pngs/submarine_horizontal_1_hit.png */ \"./src/assets/pngs/submarine_horizontal_1_hit.png\");\n/* harmony import */ var _assets_pngs_submarine_horizontal_2_hit_png__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ./assets/pngs/submarine_horizontal_2_hit.png */ \"./src/assets/pngs/submarine_horizontal_2_hit.png\");\n/* harmony import */ var _assets_pngs_submarine_horizontal_3_hit_png__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ./assets/pngs/submarine_horizontal_3_hit.png */ \"./src/assets/pngs/submarine_horizontal_3_hit.png\");\n/* harmony import */ var _assets_pngs_submarine_vertical_1_hit_png__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! ./assets/pngs/submarine_vertical_1_hit.png */ \"./src/assets/pngs/submarine_vertical_1_hit.png\");\n/* harmony import */ var _assets_pngs_submarine_vertical_2_hit_png__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! ./assets/pngs/submarine_vertical_2_hit.png */ \"./src/assets/pngs/submarine_vertical_2_hit.png\");\n/* harmony import */ var _assets_pngs_submarine_vertical_3_hit_png__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! ./assets/pngs/submarine_vertical_3_hit.png */ \"./src/assets/pngs/submarine_vertical_3_hit.png\");\n/* harmony import */ var _assets_pngs_destroyer_horizontal_1_hit_png__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! ./assets/pngs/destroyer_horizontal_1_hit.png */ \"./src/assets/pngs/destroyer_horizontal_1_hit.png\");\n/* harmony import */ var _assets_pngs_destroyer_horizontal_2_hit_png__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! ./assets/pngs/destroyer_horizontal_2_hit.png */ \"./src/assets/pngs/destroyer_horizontal_2_hit.png\");\n/* harmony import */ var _assets_pngs_destroyer_vertical_1_hit_png__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! ./assets/pngs/destroyer_vertical_1_hit.png */ \"./src/assets/pngs/destroyer_vertical_1_hit.png\");\n/* harmony import */ var _assets_pngs_destroyer_vertical_2_hit_png__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! ./assets/pngs/destroyer_vertical_2_hit.png */ \"./src/assets/pngs/destroyer_vertical_2_hit.png\");\n/* harmony import */ var _events_js__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! ./events.js */ \"./src/events.js\");\n/* harmony import */ var _player_js__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! ./player.js */ \"./src/player.js\");\n/* harmony import */ var _gameboard_js__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! ./gameboard.js */ \"./src/gameboard.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nvar ship_names=[\"carrier\",\"battleship\",\"cruiser\",\"submarine\",\"destroyer\"];\r\nvar ship_pngs=[_assets_pngs_carrier_png__WEBPACK_IMPORTED_MODULE_1__,_assets_pngs_battleship_png__WEBPACK_IMPORTED_MODULE_12__,_assets_pngs_cruiser_png__WEBPACK_IMPORTED_MODULE_21__,_assets_pngs_submarine_png__WEBPACK_IMPORTED_MODULE_28__,_assets_pngs_destroyer_png__WEBPACK_IMPORTED_MODULE_35__];\r\nvar ship_lengths=[5,4,3,3,2];\r\nvar ship_h_pngs=[];\r\nvar ship_v_pngs=[];\r\nvar ship_h_pngs_hit=[];\r\nvar ship_v_pngs_hit=[];\r\nvar gameStart=false;\r\nvar lastDragged;\r\nvar player1,player2;\r\nvar shipCount=[1,2,1,2,4];\r\nvar shipIds=[[1],[1,2],[1],[1,2],[1,2,3,4]];\r\nplayer1=new _player_js__WEBPACK_IMPORTED_MODULE_75__.Player(\"human\");\r\n\r\nfunction initForNewGame()\r\n{\r\n    lastDragged=null;\r\n    player1=new _player_js__WEBPACK_IMPORTED_MODULE_75__.Player(\"human\");\r\n    player2=null;\r\n    shipCount=[1,2,1,2,4];\r\n    document.querySelectorAll(\".select\").forEach(i=>{\r\n        i.hidden=false;\r\n    });\r\n    shipIds=[[1],[1,2],[1],[1,2],[1,2,3,4]];\r\n    document.querySelector(\".buttons\").hidden=false;\r\n    document.querySelector(\".ships_select\").hidden=false;\r\n    document.querySelector(\".directions\").hidden=true;\r\n    document.querySelector(\"#startgame\").hidden=false;\r\n    document.querySelector(\".rotate\").hidden=false;\r\n    document.querySelector(\".randomize\").hidden=false;\r\n}\r\n\r\ndocument.querySelector(\"#startgame\").addEventListener(\"click\",(e)=>{\r\n    if(player1.gameboard.ships.length==10)\r\n    {\r\n        document.querySelector(\".optionDialog\").showModal();\r\n    }\r\n});\r\n\r\nfunction initShipsOrienPNGs()\r\n{\r\n    ship_h_pngs[0]=[_assets_pngs_carrier_horizontal_1_png__WEBPACK_IMPORTED_MODULE_2__,_assets_pngs_carrier_horizontal_2_png__WEBPACK_IMPORTED_MODULE_3__,_assets_pngs_carrier_horizontal_3_png__WEBPACK_IMPORTED_MODULE_4__,_assets_pngs_carrier_horizontal_4_png__WEBPACK_IMPORTED_MODULE_5__,_assets_pngs_carrier_horizontal_5_png__WEBPACK_IMPORTED_MODULE_6__];\r\n    ship_h_pngs[1]=[_assets_pngs_battleship_horizontal_1_png__WEBPACK_IMPORTED_MODULE_13__,_assets_pngs_battleship_horizontal_2_png__WEBPACK_IMPORTED_MODULE_14__,_assets_pngs_battleship_horizontal_3_png__WEBPACK_IMPORTED_MODULE_15__,_assets_pngs_battleship_horizontal_4_png__WEBPACK_IMPORTED_MODULE_16__];\r\n    ship_h_pngs[2]=[_assets_pngs_cruiser_horizontal_1_png__WEBPACK_IMPORTED_MODULE_22__,_assets_pngs_cruiser_horizontal_2_png__WEBPACK_IMPORTED_MODULE_23__,_assets_pngs_cruiser_horizontal_3_png__WEBPACK_IMPORTED_MODULE_24__];\r\n    ship_h_pngs[3]=[_assets_pngs_submarine_horizontal_1_png__WEBPACK_IMPORTED_MODULE_29__,_assets_pngs_submarine_horizontal_2_png__WEBPACK_IMPORTED_MODULE_30__,_assets_pngs_submarine_horizontal_3_png__WEBPACK_IMPORTED_MODULE_31__];\r\n    ship_h_pngs[4]=[_assets_pngs_destroyer_horizontal_1_png__WEBPACK_IMPORTED_MODULE_36__,_assets_pngs_destroyer_horizontal_2_png__WEBPACK_IMPORTED_MODULE_37__];\r\n    ship_v_pngs[0]=[_assets_pngs_carrier_vertical_1_png__WEBPACK_IMPORTED_MODULE_7__,_assets_pngs_carrier_vertical_2_png__WEBPACK_IMPORTED_MODULE_8__,_assets_pngs_carrier_vertical_3_png__WEBPACK_IMPORTED_MODULE_9__,_assets_pngs_carrier_vertical_4_png__WEBPACK_IMPORTED_MODULE_10__,_assets_pngs_carrier_vertical_5_png__WEBPACK_IMPORTED_MODULE_11__];\r\n    ship_v_pngs[1]=[_assets_pngs_battleship_vertical_1_png__WEBPACK_IMPORTED_MODULE_17__,_assets_pngs_battleship_vertical_2_png__WEBPACK_IMPORTED_MODULE_18__,_assets_pngs_battleship_vertical_3_png__WEBPACK_IMPORTED_MODULE_19__,_assets_pngs_battleship_vertical_4_png__WEBPACK_IMPORTED_MODULE_20__];\r\n    ship_v_pngs[2]=[_assets_pngs_cruiser_vertical_1_png__WEBPACK_IMPORTED_MODULE_25__,_assets_pngs_cruiser_vertical_2_png__WEBPACK_IMPORTED_MODULE_26__,_assets_pngs_cruiser_vertical_3_png__WEBPACK_IMPORTED_MODULE_27__];\r\n    ship_v_pngs[3]=[_assets_pngs_submarine_vertical_1_png__WEBPACK_IMPORTED_MODULE_32__,_assets_pngs_submarine_vertical_2_png__WEBPACK_IMPORTED_MODULE_33__,_assets_pngs_submarine_vertical_3_png__WEBPACK_IMPORTED_MODULE_34__];\r\n    ship_v_pngs[4]=[_assets_pngs_destroyer_vertical_1_png__WEBPACK_IMPORTED_MODULE_38__,_assets_pngs_destroyer_vertical_2_png__WEBPACK_IMPORTED_MODULE_39__];\r\n}\r\ninitShipsOrienPNGs();\r\n\r\nfunction initShipsOrienPNGsHit()\r\n{\r\n    ship_h_pngs_hit[0]=[_assets_pngs_carrier_horizontal_1_hit_png__WEBPACK_IMPORTED_MODULE_40__,_assets_pngs_carrier_horizontal_2_hit_png__WEBPACK_IMPORTED_MODULE_41__,_assets_pngs_carrier_horizontal_3_hit_png__WEBPACK_IMPORTED_MODULE_42__,_assets_pngs_carrier_horizontal_4_hit_png__WEBPACK_IMPORTED_MODULE_43__,_assets_pngs_carrier_horizontal_5_hit_png__WEBPACK_IMPORTED_MODULE_44__];\r\n    ship_h_pngs_hit[1]=[_assets_pngs_battleship_horizontal_1_hit_png__WEBPACK_IMPORTED_MODULE_50__,_assets_pngs_battleship_horizontal_2_hit_png__WEBPACK_IMPORTED_MODULE_51__,_assets_pngs_battleship_horizontal_3_hit_png__WEBPACK_IMPORTED_MODULE_52__,_assets_pngs_battleship_horizontal_4_hit_png__WEBPACK_IMPORTED_MODULE_53__];\r\n    ship_h_pngs_hit[2]=[_assets_pngs_cruiser_horizontal_1_hit_png__WEBPACK_IMPORTED_MODULE_58__,_assets_pngs_cruiser_horizontal_2_hit_png__WEBPACK_IMPORTED_MODULE_59__,_assets_pngs_cruiser_horizontal_3_hit_png__WEBPACK_IMPORTED_MODULE_60__];\r\n    ship_h_pngs_hit[3]=[_assets_pngs_submarine_horizontal_1_hit_png__WEBPACK_IMPORTED_MODULE_64__,_assets_pngs_submarine_horizontal_2_hit_png__WEBPACK_IMPORTED_MODULE_65__,_assets_pngs_submarine_horizontal_3_hit_png__WEBPACK_IMPORTED_MODULE_66__];\r\n    ship_h_pngs_hit[4]=[_assets_pngs_destroyer_horizontal_1_hit_png__WEBPACK_IMPORTED_MODULE_70__,_assets_pngs_destroyer_horizontal_2_hit_png__WEBPACK_IMPORTED_MODULE_71__];\r\n    ship_v_pngs_hit[0]=[_assets_pngs_carrier_vertical_1_hit_png__WEBPACK_IMPORTED_MODULE_45__,_assets_pngs_carrier_vertical_2_hit_png__WEBPACK_IMPORTED_MODULE_46__,_assets_pngs_carrier_vertical_3_hit_png__WEBPACK_IMPORTED_MODULE_47__,_assets_pngs_carrier_vertical_4_hit_png__WEBPACK_IMPORTED_MODULE_48__,_assets_pngs_carrier_vertical_5_hit_png__WEBPACK_IMPORTED_MODULE_49__];\r\n    ship_v_pngs_hit[1]=[_assets_pngs_battleship_vertical_1_hit_png__WEBPACK_IMPORTED_MODULE_54__,_assets_pngs_battleship_vertical_2_hit_png__WEBPACK_IMPORTED_MODULE_55__,_assets_pngs_battleship_vertical_3_hit_png__WEBPACK_IMPORTED_MODULE_56__,_assets_pngs_battleship_vertical_4_hit_png__WEBPACK_IMPORTED_MODULE_57__];\r\n    ship_v_pngs_hit[2]=[_assets_pngs_cruiser_vertical_1_hit_png__WEBPACK_IMPORTED_MODULE_61__,_assets_pngs_cruiser_vertical_2_hit_png__WEBPACK_IMPORTED_MODULE_62__,_assets_pngs_cruiser_vertical_3_hit_png__WEBPACK_IMPORTED_MODULE_63__];\r\n    ship_v_pngs_hit[3]=[_assets_pngs_submarine_vertical_1_hit_png__WEBPACK_IMPORTED_MODULE_67__,_assets_pngs_submarine_vertical_2_hit_png__WEBPACK_IMPORTED_MODULE_68__,_assets_pngs_submarine_vertical_3_hit_png__WEBPACK_IMPORTED_MODULE_69__];\r\n    ship_v_pngs_hit[4]=[_assets_pngs_destroyer_vertical_1_hit_png__WEBPACK_IMPORTED_MODULE_72__,_assets_pngs_destroyer_vertical_2_hit_png__WEBPACK_IMPORTED_MODULE_73__];\r\n}\r\ninitShipsOrienPNGsHit();\r\n\r\ndocument.addEventListener(\"dragstart\",function(event){\r\n    lastDragged=event.target;\r\n});\r\n\r\nfunction allowDrop(e)\r\n{\r\n    if(lastDragged.classList.contains(\"select\"))\r\n        {\r\n            e.preventDefault();\r\n            if(!_events_js__WEBPACK_IMPORTED_MODULE_74__.orient_flag)\r\n            {\r\n                let ii=parseInt(e.target.classList[2].charAt(1));\r\n                let ij=parseInt(e.target.classList[2].charAt(3));\r\n                let l=parseInt(lastDragged.id);\r\n                for(let i=0;i<l;i++)\r\n                {\r\n                    if(ij+i>9)\r\n                        break;\r\n                    document.querySelector(\".i\"+ii+\"j\"+(ij+i)).style.backgroundColor=\"#f0c9c9\";\r\n                }\r\n            }\r\n            else\r\n            {\r\n                let ii=parseInt(e.target.classList[2].charAt(1));\r\n                let ij=parseInt(e.target.classList[2].charAt(3));\r\n                let l=parseInt(lastDragged.id);\r\n                for(let i=0;i<l;i++)\r\n                {\r\n                    if(ii+i>9)\r\n                        break;\r\n                    document.querySelector(\".i\"+(ii+i)+\"j\"+ij).style.backgroundColor=\"#f0c9c9\";\r\n                }\r\n            }\r\n        }\r\n}\r\n\r\nfunction leaveDrop(e)\r\n{\r\n    if(!_events_js__WEBPACK_IMPORTED_MODULE_74__.orient_flag)\r\n        {\r\n            let ii=parseInt(e.target.classList[2].charAt(1));\r\n            let ij=parseInt(e.target.classList[2].charAt(3));\r\n            let l=parseInt(lastDragged.id);\r\n            for(let i=0;i<l;i++)\r\n            {\r\n                if(ij+i>9)\r\n                    break;\r\n                document.querySelector(\".i\"+ii+\"j\"+(ij+i)).style.backgroundColor=\"#ffffff\";\r\n            }\r\n        }\r\n        else\r\n        {\r\n            let ii=parseInt(e.target.classList[2].charAt(1));\r\n            let ij=parseInt(e.target.classList[2].charAt(3));\r\n            let l=parseInt(lastDragged.id);\r\n            for(let i=0;i<l;i++)\r\n            {\r\n                if(ii+i>9)\r\n                    break;\r\n                document.querySelector(\".i\"+(ii+i)+\"j\"+ij).style.backgroundColor=\"#ffffff\";\r\n            }\r\n        }\r\n}\r\n\r\nfunction addShip(e)\r\n{\r\n    e.preventDefault();\r\n    if(e.target.classList.contains(\"cp\"))\r\n    {\r\n        let box=e.target;\r\n        let index_i=parseInt(box.classList[2].charAt(1));\r\n        let index_j=parseInt(box.classList[2].charAt(3));\r\n        let ans=player1.gameboard.placeShip(parseInt(lastDragged.id),(!_events_js__WEBPACK_IMPORTED_MODULE_74__.orient_flag)?\"horizontal\":\"vertical\",index_i,index_j,lastDragged.classList[0]);\r\n        if(ans)\r\n        {\r\n            let name=lastDragged.classList[0];\r\n            let orien=(!_events_js__WEBPACK_IMPORTED_MODULE_74__.orient_flag)?\"horizontal\":\"vertical\";\r\n            if(orien==\"horizontal\")\r\n            {\r\n                let cid=shipIds[ship_names.indexOf(name)].pop();\r\n                for(let i=1;i<=parseInt(lastDragged.id);i++)\r\n                {\r\n                    let img=new Image();\r\n                    img.className=name;\r\n                    img.classList.add(\"no\"+i,\"horizontal\",\"id\"+cid);\r\n                    img.src=ship_h_pngs[ship_names.indexOf(name)][i-1];\r\n                    box=document.querySelector(\".i\"+index_i+\"j\"+(index_j+i-1));\r\n                    img.style.height=\"54px\";\r\n                    img.style.width=\"54px\";\r\n                    img.addEventListener(\"click\",(e)=>{\r\n                        if(!gameStart)\r\n                        {\r\n                            let n=e.target.classList[0];\r\n                            let id=e.target.classList[3];\r\n                            let f=document.querySelector(\".no1.\"+n+\".\"+id);\r\n                            player1.gameboard.removeShip(ship_lengths[ship_names.indexOf(n)],e.target.classList[2],parseInt(f.parentElement.classList[2].charAt(1)),parseInt(f.parentElement.classList[2].charAt(3)),n);\r\n                            document.querySelectorAll(\".\"+n+\".horizontal.\"+id).forEach(i=>{\r\n                                i.remove();\r\n                            });\r\n                            let ind=ship_names.indexOf(n);\r\n                            shipCount[ind]=shipCount[ind]+1;\r\n                            if(shipCount[ind]>=1)\r\n                            {\r\n                                document.querySelector(\".\"+n+\".select\").hidden=false;\r\n                            }\r\n                            shipIds[ind].push(parseInt(id.charAt(2)));\r\n                        }\r\n                    });\r\n                    box.appendChild(img);\r\n                }\r\n            }\r\n            else\r\n                {\r\n                    let cid=shipIds[ship_names.indexOf(name)].pop();\r\n                    for(let i=1;i<=parseInt(lastDragged.id);i++)\r\n                    {\r\n                        let img=new Image();\r\n                        img.className=name;\r\n                        img.classList.add(\"no\"+i,\"vertical\",\"id\"+cid);\r\n                        img.src=ship_v_pngs[ship_names.indexOf(name)][i-1];\r\n                        box=document.querySelector(\".i\"+(index_i+i-1)+\"j\"+index_j);\r\n                        img.style.height=\"54px\";\r\n                        img.style.width=\"54px\";\r\n                        img.addEventListener(\"click\",(e)=>{\r\n                            if(!gameStart)\r\n                            {\r\n                                let n=e.target.classList[0];\r\n                                let id=e.target.classList[3];\r\n                                let f=document.querySelector(\".no1.\"+n+\".\"+id);\r\n                                player1.gameboard.removeShip(ship_lengths[ship_names.indexOf(n)],e.target.classList[2],parseInt(f.parentElement.classList[2].charAt(1)),parseInt(f.parentElement.classList[2].charAt(3)),n);\r\n                                document.querySelectorAll(\".\"+n+\".vertical.\"+id).forEach(i=>{\r\n                                    i.remove();\r\n                                });\r\n                                let ind=ship_names.indexOf(n);\r\n                                shipCount[ind]=shipCount[ind]+1;\r\n                                if(shipCount[ind]>=1)\r\n                                {\r\n                                    document.querySelector(\".\"+n+\".select\").hidden=false;\r\n                                }\r\n                                shipIds[ind].push(parseInt(id.charAt(2)));\r\n                            }\r\n                        });\r\n                        box.appendChild(img);\r\n                    }\r\n                }\r\n            let ind=ship_names.indexOf(name);\r\n            shipCount[ind]=shipCount[ind]-1;\r\n            if(shipCount[ind]==0)\r\n            {\r\n                document.querySelector(\".\"+name+\".select\").hidden=true;\r\n            }\r\n        }\r\n    if(!_events_js__WEBPACK_IMPORTED_MODULE_74__.orient_flag)\r\n        {\r\n            let ii=parseInt(e.target.classList[2].charAt(1));\r\n            let ij=parseInt(e.target.classList[2].charAt(3));\r\n            let l=parseInt(lastDragged.id);\r\n            for(let i=0;i<l;i++)\r\n            {\r\n                if(ij+i>9)\r\n                    break;\r\n                document.querySelector(\".i\"+ii+\"j\"+(ij+i)).style.backgroundColor=\"#ffffff\";\r\n            }\r\n        }\r\n        else\r\n        {\r\n            let ii=parseInt(e.target.classList[2].charAt(1));\r\n            let ij=parseInt(e.target.classList[2].charAt(3));\r\n            let l=parseInt(lastDragged.id);\r\n            for(let i=0;i<l;i++)\r\n            {\r\n                if(ii+i>9)\r\n                    break;\r\n                document.querySelector(\".i\"+(ii+i)+\"j\"+ij).style.backgroundColor=\"#ffffff\";\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\ndocument.querySelector(\".randomize\").addEventListener(\"click\",e=>{\r\n    if(!gameStart)\r\n    {\r\n        player1=new _player_js__WEBPACK_IMPORTED_MODULE_75__.Player(\"human\");\r\n        player1.gameboard=randomPlacement();\r\n        displayShips(player1.gameboard);\r\n    }\r\n});\r\n\r\nfunction initDragDrop()\r\n{\r\n    let squares=document.querySelectorAll(\".grid_square\");\r\n    for(let i=0;i<squares.length;i++)\r\n    {\r\n        squares[i].ondragover=allowDrop;\r\n        squares[i].ondrop=addShip;\r\n        squares[i].ondragleave=leaveDrop;\r\n    }\r\n    let ships=document.querySelectorAll(\".select\");\r\n    for(let i=0;i<ships.length;i++)\r\n    {\r\n        ships[i].draggable=true;\r\n    }\r\n}\r\n\r\ninitDragDrop();\r\n\r\nfunction initSelectMenu()\r\n{\r\n    for(var i=0;i<5;i++)\r\n    {\r\n        var q=\".\"+ship_names[i];\r\n        let img=ship_pngs[i];\r\n        document.querySelector(q).src=img;\r\n    }\r\n}\r\n\r\ninitSelectMenu();\r\n\r\nfunction randomPlacement()\r\n{\r\n    let gb=new _gameboard_js__WEBPACK_IMPORTED_MODULE_76__.Gameboard();\r\n    let lengths=[5,4,4,3,3,3,2,2,2,2];\r\n    let ships=[\"carrier\",\"battleship\",\"battleship\",\"cruiser\",\"submarine\",\"submarine\",\"destroyer\",\"destroyer\",\"destroyer\",\"destroyer\"];\r\n    let c=0;\r\n    while(gb.ships.length!=10)\r\n    {\r\n        let i = Math.floor(Math.random() * 9);\r\n        let j = Math.floor(Math.random() * 9);\r\n        let a =Math.floor(Math.random() * 100);\r\n        if(a<50)\r\n            a=\"horizontal\";\r\n        else\r\n            a=\"vertical\";\r\n        let f=gb.placeShip(lengths[c],a,i,j,ships[c]);\r\n        if(f)\r\n            c++;\r\n    }\r\n    return gb;\r\n}\r\n\r\nfunction displayShips(gb)\r\n{\r\n    resetGameBoard();\r\n    for(let i=0;i<10;i++)\r\n    {\r\n        if(gb.shipCoords[i][1][1]==gb.shipCoords[i][0][1]+1)\r\n        {\r\n            let cid=shipIds[ship_names.indexOf((gb.ships[i].name).toLowerCase())].pop();\r\n            for(let j=0;j<gb.ships[i].length;j++)\r\n            {\r\n                let box=document.querySelector(\".i\"+gb.shipCoords[i][j][0]+\"j\"+gb.shipCoords[i][j][1]);\r\n                let img=new Image();\r\n                img.className=gb.ships[i].name;\r\n                img.classList.add(\"no\"+(j+1),\"horizontal\",\"id\"+cid);\r\n                img.src=ship_h_pngs[ship_names.indexOf((gb.ships[i].name).toLowerCase())][j];\r\n                img.style.height=\"54px\";\r\n                img.style.width=\"54px\";\r\n                img.addEventListener(\"click\",(e)=>{\r\n                    if(!gameStart)\r\n                    {\r\n                        let n=e.target.classList[0];\r\n                        let id=e.target.classList[3];\r\n                        let f=document.querySelector(\".no1.\"+n+\".\"+id);\r\n                        player1.gameboard.removeShip(ship_lengths[ship_names.indexOf(n)],e.target.classList[2],parseInt(f.parentElement.classList[2].charAt(1)),parseInt(f.parentElement.classList[2].charAt(3)),n);\r\n                        document.querySelectorAll(\".\"+n+\".horizontal.\"+id).forEach(i=>{\r\n                            i.remove();\r\n                        });\r\n                        let ind=ship_names.indexOf(n);\r\n                        shipCount[ind]=shipCount[ind]+1;\r\n                        if(shipCount[ind]>=1)\r\n                        {\r\n                            document.querySelector(\".\"+n+\".select\").hidden=false;\r\n                        }\r\n                        shipIds[ind].push(parseInt(id.charAt(2)));\r\n                    }\r\n                });\r\n                box.appendChild(img);\r\n            }\r\n        }\r\n        else\r\n        {\r\n            let cid=shipIds[ship_names.indexOf((gb.ships[i].name).toLowerCase())].pop();\r\n            for(let j=0;j<gb.ships[i].length;j++)\r\n            {\r\n                let box=document.querySelector(\".i\"+gb.shipCoords[i][j][0]+\"j\"+gb.shipCoords[i][j][1]);\r\n                let img=new Image();\r\n                img.className=gb.ships[i].name;\r\n                img.classList.add(\"no\"+(j+1),\"vertical\",\"id\"+cid);\r\n                img.src=ship_v_pngs[ship_names.indexOf((gb.ships[i].name).toLowerCase())][j];\r\n                img.style.height=\"54px\";\r\n                img.style.width=\"54px\";\r\n                img.addEventListener(\"click\",(e)=>{\r\n                    if(!gameStart)\r\n                        {\r\n                            let n=e.target.classList[0];\r\n                            let id=e.target.classList[3];\r\n                            let f=document.querySelector(\".no1.\"+n+\".\"+id);\r\n                            n=n.toLowerCase();\r\n                            player1.gameboard.removeShip(ship_lengths[ship_names.indexOf(n)],e.target.classList[2],parseInt(f.parentElement.classList[2].charAt(1)),parseInt(f.parentElement.classList[2].charAt(3)),n);\r\n                            document.querySelectorAll(\".\"+n+\".vertical.\"+id).forEach(i=>{\r\n                                i.remove();\r\n                            });\r\n                            let ind=ship_names.indexOf(n);\r\n                            shipCount[ind]=shipCount[ind]+1;\r\n                            if(shipCount[ind]>=1)\r\n                            {\r\n                                document.querySelector(\".\"+n+\".select\").hidden=false;\r\n                            }\r\n                            shipIds[ind].push(parseInt(id.charAt(2)));\r\n                        }\r\n                });\r\n                box.appendChild(img);\r\n            }\r\n        }\r\n        let ind=ship_names.indexOf(gb.ships[i].name);\r\n        shipCount[ind]=shipCount[ind]-1;\r\n        if(shipCount[ind]==0)\r\n        {\r\n            document.querySelector(\".\"+gb.ships[i].name+\".select\").hidden=true;\r\n        }\r\n    }\r\n}\r\n\r\nfunction resetGameBoard()\r\n{\r\n    document.querySelectorAll(\"img\").forEach(i=>{\r\n        if(!i.classList.contains(\"select\"))\r\n        {\r\n            i.remove();\r\n        }\r\n    });\r\n}\r\n\r\ndocument.querySelector(\"#hidemodal\").addEventListener(\"click\",e=>{\r\n    document.querySelector(\"dialog\").close();\r\n    gameStart=true;\r\n    gameStarts();\r\n    player1Turn();\r\n});\r\n\r\nfunction gameStarts()\r\n{\r\n    document.querySelector(\".buttons\").hidden=true;\r\n    document.querySelector(\".ships_select\").hidden=true;\r\n    document.querySelector(\".directions\").hidden=false;\r\n    document.querySelector(\"#startgame\").hidden=true;\r\n    document.querySelector(\".rotate\").hidden=true;\r\n    document.querySelector(\".randomize\").hidden=true;\r\n    player2=new _player_js__WEBPACK_IMPORTED_MODULE_75__.Player(\"computer\");\r\n    player1.turn=true;\r\n    player2.turn=false;\r\n    player2.gameboard=randomPlacement();\r\n}\r\n\r\nfunction player1Turn()\r\n{\r\n    document.querySelector(\".directions\").textContent=\"Choose a square on opponent's board to hit\";\r\n}\r\n\r\nlet op=document.querySelectorAll(\".op\");\r\nop.forEach(b=>{\r\n    b.addEventListener(\"click\",(e)=>{\r\n        if(gameStart&&player1.turn)\r\n        {\r\n            let et=e.target;\r\n            if(e.target.localName==\"img\")\r\n                et=e.target.parentElement;\r\n            let i=et.classList[2].charAt(1);\r\n            let j=et.classList[2].charAt(3);\r\n            i=parseInt(i);\r\n            j=parseInt(j);\r\n            let x=player2.gameboard.receiveAttack(i,j);\r\n            if(x==null)\r\n                document.querySelector(\".directions\").textContent=\"Already hit!\";\r\n            else if(x=='miss')\r\n            {\r\n                document.querySelector(\".directions\").textContent=\"Miss!\";\r\n                et.style.backgroundColor=\"#DDDDDD\";\r\n                player1.turn=false;\r\n                player2.turn=true;\r\n                setTimeout(player2Turn,3000);\r\n            }\r\n            else if(x=='hit')\r\n            {\r\n                document.querySelector(\".directions\").textContent=\"Hit!\";\r\n                et.style.backgroundColor=\"#FFAAAA\";\r\n                player1.turn=false;\r\n                player2.turn=true;\r\n                setTimeout(player2Turn,3000);\r\n            }\r\n            else\r\n            {\r\n                et.style.backgroundColor=\"#FFAAAA\";\r\n                document.querySelector(\".directions\").textContent=x;\r\n                let name=x.substring(5);\r\n                name=name.substring(0,name.length-1);\r\n                if(player2.gameboard.ships[player2.gameboard.spaces[i][j]-10].or==\"horizontal\")\r\n                {\r\n                    let pngs=ship_h_pngs_hit[ship_names.indexOf(name)];\r\n                    for(let k=0;k<pngs.length;k++)\r\n                    {\r\n                        let img=new Image();\r\n                        img.src=pngs[k];\r\n                        document.querySelector(\".op.i\"+i+\"j\"+(player2.gameboard.ships[player2.gameboard.spaces[i][j]-10].coords[k][1])).appendChild(img);\r\n                    }\r\n                }\r\n                else\r\n                {\r\n                    let pngs=ship_v_pngs_hit[ship_names.indexOf(name)];\r\n                    for(let k=0;k<pngs.length;k++)\r\n                    {\r\n                        let img=new Image();\r\n                        img.src=pngs[k];\r\n                        document.querySelector(\".op.i\"+(player2.gameboard.ships[player2.gameboard.spaces[i][j]-10].coords[k][0])+\"j\"+j).appendChild(img);\r\n                    }\r\n                }\r\n                setTimeout(player1Turn,3000);\r\n            }\r\n        }\r\n    });\r\n});\r\n\r\nfunction player2Turn()\r\n{\r\n    let i = Math.floor(Math.random() * 9);\r\n    let j = Math.floor(Math.random() * 9);\r\n    let x=player1.gameboard.receiveAttack(i,j);\r\n    if(x==null)\r\n        player2Turn();\r\n    else\r\n    {\r\n        if(x=='hit')\r\n        {\r\n            let ship=document.querySelector(\".cp.i\"+i+\"j\"+j);\r\n            let img=ship.children[0];\r\n            let name=img.classList[0];\r\n            let o=img.classList[2];\r\n            let k=img.classList[1];\r\n            k=k.charAt(2);\r\n            k=parseInt(k);\r\n            if(o==\"horizontal\")\r\n                img.src=ship_h_pngs_hit[ship_names.indexOf(name)][k-1];\r\n            else\r\n                img.src=ship_v_pngs_hit[ship_names.indexOf(name)][k-1];\r\n            document.querySelector(\".directions\").textContent=\"Opponent hit \"+name+\"!\";\r\n            player1.turn=true;\r\n            player2.turn=false;\r\n            setTimeout(player1Turn,3000);\r\n        }\r\n        else if(x==\"miss\")\r\n        {\r\n            let ship=document.querySelector(\".cp.i\"+i+\"j\"+j);\r\n            ship.style.backgroundColor=\"#DDDDDD\";\r\n            player1.turn=true;\r\n            player2.turn=false;\r\n            setTimeout(player1Turn,3000);\r\n        }\r\n        else\r\n        {\r\n            let ship=document.querySelector(\".cp.i\"+i+\"j\"+j);\r\n            let img=ship.children[0];\r\n            let name=img.classList[0];\r\n            let o=img.classList[2];\r\n            let k=img.classList[1];\r\n            k=k.charAt(2);\r\n            k=parseInt(k);\r\n            if(o==\"horizontal\")\r\n                img.src=ship_h_pngs_hit[ship_names.indexOf(name)][k-1];\r\n            else\r\n                img.src=ship_v_pngs_hit[ship_names.indexOf(name)][k-1];\r\n            document.querySelector(\".directions\").textContent=\"Opponent sunk \"+name+\"!\";\r\n            setTimeout(player2Turn,3000);\r\n        }\r\n    }\r\n}\n\n//# sourceURL=webpack://battleship/./src/index.js?");
 
 /***/ }),
 
@@ -166,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Ship: () => (/* binding */ Ship)\n/* harmony export */ });\nclass Ship\r\n{\r\n    constructor(length,name)\r\n    {\r\n        this.length=length;\r\n        this.hits=0;\r\n        this.sunk=false;\r\n        this.name=name;\r\n        this.coords=[];\r\n    }\r\n    hit()\r\n    {\r\n        this.hits=this.hits+1;\r\n        this.isSunk();\r\n    }\r\n    isSunk()\r\n    {\r\n        if(this.hits>=this.length)\r\n        {\r\n            this.sunk=true;\r\n            return true;\r\n        }\r\n        return false;\r\n    }\r\n}\r\n\r\n/*\r\n\r\nships info\r\n\r\n0 carrier - amount 1 - size 5\r\n\r\n1 battleship - amount 2 - size 4\r\n\r\n2 submarine - amount 2 - size 3\r\n\r\n3 cruiser - amount 1 - size 3\r\n\r\n4 destroyer - amount 4 - size 2\r\n\r\n*/\n\n//# sourceURL=webpack://battleship/./src/ship.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Ship: () => (/* binding */ Ship)\n/* harmony export */ });\nclass Ship\r\n{\r\n    constructor(length,name,or)\r\n    {\r\n        this.length=length;\r\n        this.hits=0;\r\n        this.sunk=false;\r\n        this.name=name;\r\n        this.coords=[];\r\n        this.or=or;\r\n    }\r\n    hit()\r\n    {\r\n        this.hits=this.hits+1;\r\n        this.isSunk();\r\n    }\r\n    isSunk()\r\n    {\r\n        if(this.hits>=this.length)\r\n        {\r\n            this.sunk=true;\r\n            return true;\r\n        }\r\n        return false;\r\n    }\r\n}\r\n\r\n/*\r\n\r\nships info\r\n\r\n0 carrier - amount 1 - size 5\r\n\r\n1 battleship - amount 2 - size 4\r\n\r\n2 submarine - amount 2 - size 3\r\n\r\n3 cruiser - amount 1 - size 3\r\n\r\n4 destroyer - amount 4 - size 2\r\n\r\n*/\n\n//# sourceURL=webpack://battleship/./src/ship.js?");
 
 /***/ }),
 
@@ -200,6 +200,16 @@ eval("module.exports = __webpack_require__.p + \"f50f47e19a77d197cc5c.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/battleship_horizontal_1_hit.png":
+/*!*********************************************************!*\
+  !*** ./src/assets/pngs/battleship_horizontal_1_hit.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"570d174c34affedea02d.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/battleship_horizontal_1_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/battleship_horizontal_2.png":
 /*!*****************************************************!*\
   !*** ./src/assets/pngs/battleship_horizontal_2.png ***!
@@ -207,6 +217,16 @@ eval("module.exports = __webpack_require__.p + \"f50f47e19a77d197cc5c.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"2fdda1222009bc069173.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/battleship_horizontal_2.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/battleship_horizontal_2_hit.png":
+/*!*********************************************************!*\
+  !*** ./src/assets/pngs/battleship_horizontal_2_hit.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"3ccdfda4d7edf47e03df.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/battleship_horizontal_2_hit.png?");
 
 /***/ }),
 
@@ -220,6 +240,16 @@ eval("module.exports = __webpack_require__.p + \"e892da8dbd34efe8d16a.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/battleship_horizontal_3_hit.png":
+/*!*********************************************************!*\
+  !*** ./src/assets/pngs/battleship_horizontal_3_hit.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"658315a5e3fb22dd164c.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/battleship_horizontal_3_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/battleship_horizontal_4.png":
 /*!*****************************************************!*\
   !*** ./src/assets/pngs/battleship_horizontal_4.png ***!
@@ -227,6 +257,16 @@ eval("module.exports = __webpack_require__.p + \"e892da8dbd34efe8d16a.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"a2a65cd420f49ab5109d.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/battleship_horizontal_4.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/battleship_horizontal_4_hit.png":
+/*!*********************************************************!*\
+  !*** ./src/assets/pngs/battleship_horizontal_4_hit.png ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"4f3a9fc5bfb0380caed4.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/battleship_horizontal_4_hit.png?");
 
 /***/ }),
 
@@ -240,6 +280,16 @@ eval("module.exports = __webpack_require__.p + \"716cba063b1bdb7330d0.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/battleship_vertical_1_hit.png":
+/*!*******************************************************!*\
+  !*** ./src/assets/pngs/battleship_vertical_1_hit.png ***!
+  \*******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"1ddf110c6c86c5486607.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/battleship_vertical_1_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/battleship_vertical_2.png":
 /*!***************************************************!*\
   !*** ./src/assets/pngs/battleship_vertical_2.png ***!
@@ -247,6 +297,16 @@ eval("module.exports = __webpack_require__.p + \"716cba063b1bdb7330d0.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"6576beb01e819c5b904d.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/battleship_vertical_2.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/battleship_vertical_2_hit.png":
+/*!*******************************************************!*\
+  !*** ./src/assets/pngs/battleship_vertical_2_hit.png ***!
+  \*******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"688991f5f5aa7b86d867.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/battleship_vertical_2_hit.png?");
 
 /***/ }),
 
@@ -260,6 +320,16 @@ eval("module.exports = __webpack_require__.p + \"eb60d62ef98e4c2487e4.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/battleship_vertical_3_hit.png":
+/*!*******************************************************!*\
+  !*** ./src/assets/pngs/battleship_vertical_3_hit.png ***!
+  \*******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ebd5d520c392bf8c48ae.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/battleship_vertical_3_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/battleship_vertical_4.png":
 /*!***************************************************!*\
   !*** ./src/assets/pngs/battleship_vertical_4.png ***!
@@ -267,6 +337,16 @@ eval("module.exports = __webpack_require__.p + \"eb60d62ef98e4c2487e4.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"0deb500a25db31aa4cb1.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/battleship_vertical_4.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/battleship_vertical_4_hit.png":
+/*!*******************************************************!*\
+  !*** ./src/assets/pngs/battleship_vertical_4_hit.png ***!
+  \*******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"1841bb78e7e7ea282c12.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/battleship_vertical_4_hit.png?");
 
 /***/ }),
 
@@ -290,6 +370,16 @@ eval("module.exports = __webpack_require__.p + \"1dce2e66e11e687a0f72.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/carrier_horizontal_1_hit.png":
+/*!******************************************************!*\
+  !*** ./src/assets/pngs/carrier_horizontal_1_hit.png ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ad146b04ed89739673fd.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_horizontal_1_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/carrier_horizontal_2.png":
 /*!**************************************************!*\
   !*** ./src/assets/pngs/carrier_horizontal_2.png ***!
@@ -297,6 +387,16 @@ eval("module.exports = __webpack_require__.p + \"1dce2e66e11e687a0f72.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"4ddc172e47c7243229ca.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_horizontal_2.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/carrier_horizontal_2_hit.png":
+/*!******************************************************!*\
+  !*** ./src/assets/pngs/carrier_horizontal_2_hit.png ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"378c79a74d358b412770.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_horizontal_2_hit.png?");
 
 /***/ }),
 
@@ -310,6 +410,16 @@ eval("module.exports = __webpack_require__.p + \"79416332a3a3ba63be92.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/carrier_horizontal_3_hit.png":
+/*!******************************************************!*\
+  !*** ./src/assets/pngs/carrier_horizontal_3_hit.png ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9ba4405ad98bf874bd1b.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_horizontal_3_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/carrier_horizontal_4.png":
 /*!**************************************************!*\
   !*** ./src/assets/pngs/carrier_horizontal_4.png ***!
@@ -317,6 +427,16 @@ eval("module.exports = __webpack_require__.p + \"79416332a3a3ba63be92.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"d1b2b3c245fe6c7d7624.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_horizontal_4.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/carrier_horizontal_4_hit.png":
+/*!******************************************************!*\
+  !*** ./src/assets/pngs/carrier_horizontal_4_hit.png ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"74d4ff3482ebfafd7f0d.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_horizontal_4_hit.png?");
 
 /***/ }),
 
@@ -330,6 +450,16 @@ eval("module.exports = __webpack_require__.p + \"abdc91e173d7ebfd7443.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/carrier_horizontal_5_hit.png":
+/*!******************************************************!*\
+  !*** ./src/assets/pngs/carrier_horizontal_5_hit.png ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"1ce6a9d64c81b486fcc4.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_horizontal_5_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/carrier_vertical_1.png":
 /*!************************************************!*\
   !*** ./src/assets/pngs/carrier_vertical_1.png ***!
@@ -337,6 +467,16 @@ eval("module.exports = __webpack_require__.p + \"abdc91e173d7ebfd7443.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"e20f72a7ba92415f474d.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_vertical_1.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/carrier_vertical_1_hit.png":
+/*!****************************************************!*\
+  !*** ./src/assets/pngs/carrier_vertical_1_hit.png ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"0ae69bfea5dd8238525e.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_vertical_1_hit.png?");
 
 /***/ }),
 
@@ -350,6 +490,16 @@ eval("module.exports = __webpack_require__.p + \"50cc4bb9cbb06fee1230.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/carrier_vertical_2_hit.png":
+/*!****************************************************!*\
+  !*** ./src/assets/pngs/carrier_vertical_2_hit.png ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"afa90980df3ff40692de.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_vertical_2_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/carrier_vertical_3.png":
 /*!************************************************!*\
   !*** ./src/assets/pngs/carrier_vertical_3.png ***!
@@ -357,6 +507,16 @@ eval("module.exports = __webpack_require__.p + \"50cc4bb9cbb06fee1230.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"2c338bc9b6c57dc92f54.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_vertical_3.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/carrier_vertical_3_hit.png":
+/*!****************************************************!*\
+  !*** ./src/assets/pngs/carrier_vertical_3_hit.png ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"061cbfb0e55dd8861bc8.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_vertical_3_hit.png?");
 
 /***/ }),
 
@@ -370,6 +530,16 @@ eval("module.exports = __webpack_require__.p + \"05ad9c244d65dd9d0c30.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/carrier_vertical_4_hit.png":
+/*!****************************************************!*\
+  !*** ./src/assets/pngs/carrier_vertical_4_hit.png ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"55848c1aabfa0c289403.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_vertical_4_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/carrier_vertical_5.png":
 /*!************************************************!*\
   !*** ./src/assets/pngs/carrier_vertical_5.png ***!
@@ -377,6 +547,16 @@ eval("module.exports = __webpack_require__.p + \"05ad9c244d65dd9d0c30.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"ab749e5f45c4498f0964.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_vertical_5.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/carrier_vertical_5_hit.png":
+/*!****************************************************!*\
+  !*** ./src/assets/pngs/carrier_vertical_5_hit.png ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9259b0f2ff1918ba44cd.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/carrier_vertical_5_hit.png?");
 
 /***/ }),
 
@@ -400,6 +580,16 @@ eval("module.exports = __webpack_require__.p + \"58131cadb30d3356659a.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/cruiser_horizontal_1_hit.png":
+/*!******************************************************!*\
+  !*** ./src/assets/pngs/cruiser_horizontal_1_hit.png ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"20c7f5a75e32469d159b.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/cruiser_horizontal_1_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/cruiser_horizontal_2.png":
 /*!**************************************************!*\
   !*** ./src/assets/pngs/cruiser_horizontal_2.png ***!
@@ -407,6 +597,16 @@ eval("module.exports = __webpack_require__.p + \"58131cadb30d3356659a.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"06aaf6f17af074324cec.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/cruiser_horizontal_2.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/cruiser_horizontal_2_hit.png":
+/*!******************************************************!*\
+  !*** ./src/assets/pngs/cruiser_horizontal_2_hit.png ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"582f56a507793e9f7cda.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/cruiser_horizontal_2_hit.png?");
 
 /***/ }),
 
@@ -420,6 +620,16 @@ eval("module.exports = __webpack_require__.p + \"43f9aca5ef17c71bd8cf.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/cruiser_horizontal_3_hit.png":
+/*!******************************************************!*\
+  !*** ./src/assets/pngs/cruiser_horizontal_3_hit.png ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"8fc0fa92944318467ff2.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/cruiser_horizontal_3_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/cruiser_vertical_1.png":
 /*!************************************************!*\
   !*** ./src/assets/pngs/cruiser_vertical_1.png ***!
@@ -427,6 +637,16 @@ eval("module.exports = __webpack_require__.p + \"43f9aca5ef17c71bd8cf.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"6c4156996961d855f7ef.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/cruiser_vertical_1.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/cruiser_vertical_1_hit.png":
+/*!****************************************************!*\
+  !*** ./src/assets/pngs/cruiser_vertical_1_hit.png ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ecbc390259c6d93c9995.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/cruiser_vertical_1_hit.png?");
 
 /***/ }),
 
@@ -440,6 +660,16 @@ eval("module.exports = __webpack_require__.p + \"ac0ba2b607ba0ff3470f.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/cruiser_vertical_2_hit.png":
+/*!****************************************************!*\
+  !*** ./src/assets/pngs/cruiser_vertical_2_hit.png ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"fb8f2cd8a8f86bc0b365.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/cruiser_vertical_2_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/cruiser_vertical_3.png":
 /*!************************************************!*\
   !*** ./src/assets/pngs/cruiser_vertical_3.png ***!
@@ -447,6 +677,16 @@ eval("module.exports = __webpack_require__.p + \"ac0ba2b607ba0ff3470f.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"85188f60a08be1ba06a6.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/cruiser_vertical_3.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/cruiser_vertical_3_hit.png":
+/*!****************************************************!*\
+  !*** ./src/assets/pngs/cruiser_vertical_3_hit.png ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"3a33cbdcd9a319991f80.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/cruiser_vertical_3_hit.png?");
 
 /***/ }),
 
@@ -470,6 +710,16 @@ eval("module.exports = __webpack_require__.p + \"a8fe4c55358256da0150.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/destroyer_horizontal_1_hit.png":
+/*!********************************************************!*\
+  !*** ./src/assets/pngs/destroyer_horizontal_1_hit.png ***!
+  \********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"abae391b234cb747cc5d.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/destroyer_horizontal_1_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/destroyer_horizontal_2.png":
 /*!****************************************************!*\
   !*** ./src/assets/pngs/destroyer_horizontal_2.png ***!
@@ -477,6 +727,16 @@ eval("module.exports = __webpack_require__.p + \"a8fe4c55358256da0150.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"d9ad148a0c8b47fdd5a2.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/destroyer_horizontal_2.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/destroyer_horizontal_2_hit.png":
+/*!********************************************************!*\
+  !*** ./src/assets/pngs/destroyer_horizontal_2_hit.png ***!
+  \********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"3e49418251816c78aacd.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/destroyer_horizontal_2_hit.png?");
 
 /***/ }),
 
@@ -490,6 +750,16 @@ eval("module.exports = __webpack_require__.p + \"01a8160e9d2000adae57.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/destroyer_vertical_1_hit.png":
+/*!******************************************************!*\
+  !*** ./src/assets/pngs/destroyer_vertical_1_hit.png ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"180e8e08828105af8ab4.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/destroyer_vertical_1_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/destroyer_vertical_2.png":
 /*!**************************************************!*\
   !*** ./src/assets/pngs/destroyer_vertical_2.png ***!
@@ -497,6 +767,16 @@ eval("module.exports = __webpack_require__.p + \"01a8160e9d2000adae57.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"b8697f336699f44d2e17.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/destroyer_vertical_2.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/destroyer_vertical_2_hit.png":
+/*!******************************************************!*\
+  !*** ./src/assets/pngs/destroyer_vertical_2_hit.png ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"db760f668d9d63b63428.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/destroyer_vertical_2_hit.png?");
 
 /***/ }),
 
@@ -520,6 +800,16 @@ eval("module.exports = __webpack_require__.p + \"b902d1a1f7f0a7e68a3d.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/submarine_horizontal_1_hit.png":
+/*!********************************************************!*\
+  !*** ./src/assets/pngs/submarine_horizontal_1_hit.png ***!
+  \********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"35c1177bbc9546cff929.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/submarine_horizontal_1_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/submarine_horizontal_2.png":
 /*!****************************************************!*\
   !*** ./src/assets/pngs/submarine_horizontal_2.png ***!
@@ -527,6 +817,16 @@ eval("module.exports = __webpack_require__.p + \"b902d1a1f7f0a7e68a3d.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"7fb55e60aaf3f9196cd3.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/submarine_horizontal_2.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/submarine_horizontal_2_hit.png":
+/*!********************************************************!*\
+  !*** ./src/assets/pngs/submarine_horizontal_2_hit.png ***!
+  \********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"044a49520e3f2cd39f94.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/submarine_horizontal_2_hit.png?");
 
 /***/ }),
 
@@ -540,6 +840,16 @@ eval("module.exports = __webpack_require__.p + \"02b44a400c3d3a042179.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/submarine_horizontal_3_hit.png":
+/*!********************************************************!*\
+  !*** ./src/assets/pngs/submarine_horizontal_3_hit.png ***!
+  \********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"39cc2bd6a530828cf6cc.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/submarine_horizontal_3_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/submarine_vertical_1.png":
 /*!**************************************************!*\
   !*** ./src/assets/pngs/submarine_vertical_1.png ***!
@@ -547,6 +857,16 @@ eval("module.exports = __webpack_require__.p + \"02b44a400c3d3a042179.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"1040e408cfbbe8138430.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/submarine_vertical_1.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/submarine_vertical_1_hit.png":
+/*!******************************************************!*\
+  !*** ./src/assets/pngs/submarine_vertical_1_hit.png ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"d4bfcbd49106d0393e84.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/submarine_vertical_1_hit.png?");
 
 /***/ }),
 
@@ -560,6 +880,16 @@ eval("module.exports = __webpack_require__.p + \"71b30111734a692214f9.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/assets/pngs/submarine_vertical_2_hit.png":
+/*!******************************************************!*\
+  !*** ./src/assets/pngs/submarine_vertical_2_hit.png ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"935313a75bf477e766f2.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/submarine_vertical_2_hit.png?");
+
+/***/ }),
+
 /***/ "./src/assets/pngs/submarine_vertical_3.png":
 /*!**************************************************!*\
   !*** ./src/assets/pngs/submarine_vertical_3.png ***!
@@ -567,6 +897,16 @@ eval("module.exports = __webpack_require__.p + \"71b30111734a692214f9.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"95f200fce8af7ef9f81b.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/submarine_vertical_3.png?");
+
+/***/ }),
+
+/***/ "./src/assets/pngs/submarine_vertical_3_hit.png":
+/*!******************************************************!*\
+  !*** ./src/assets/pngs/submarine_vertical_3_hit.png ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"59570e1c142d32201ce6.png\";\n\n//# sourceURL=webpack://battleship/./src/assets/pngs/submarine_vertical_3_hit.png?");
 
 /***/ })
 
