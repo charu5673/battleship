@@ -41,7 +41,7 @@ export class Gameboard
                 }
                 if(!flag)
                     return false;
-                this.ships.push(new Ship(length,name));
+                this.ships.push(new Ship(length,name,"horizontal"));
                 for(i=y;i<y+length;i++)
                     {
                         this.spaces[x][i]=count;
@@ -67,7 +67,7 @@ export class Gameboard
                     }
                     if(!flag)
                         return false;
-                    this.ships.push(new Ship(length,name));
+                    this.ships.push(new Ship(length,name,"vertical"));
                     for(i=x;i<x+length;i++)
                         {
                             this.spaces[i][y]=count;
@@ -128,7 +128,7 @@ export class Gameboard
             this.spaces[x][y]=-2;
             return 'miss';
         }
-        if(val==-2||val>=10&&val<=19)
+        if(val==-2||(val>=10&&val<=19))
         {
             return null;
         }
@@ -139,7 +139,7 @@ export class Gameboard
             if(this.ships[val].isSunk())
             {
                 this.sunkCount=this.sunkCount+1;
-                return 'sunk';
+                return 'Sunk '+this.ships[val].name+'!';
             }
             return 'hit';
         }

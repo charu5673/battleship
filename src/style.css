@@ -49,6 +49,18 @@ body
     gap: 10px;
 }
 
+.directions
+{
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    width: 100%;
+    font-family: pixel;
+    color: #0a3556;
+    font-size: 30px;
+    text-align: center;
+}
+
 .gameboard
 {
     height: 600px;
@@ -164,4 +176,10 @@ dialog
     color: aliceblue;
     height: 40px;
     width: 120px;
+}
+
+.op img
+{
+    height: 54px;
+    width: 54px;
 }

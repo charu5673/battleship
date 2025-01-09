@@ -1,12 +1,13 @@
 export class Ship
 {
-    constructor(length,name)
+    constructor(length,name,or)
     {
         this.length=length;
         this.hits=0;
         this.sunk=false;
         this.name=name;
         this.coords=[];
+        this.or=or;
     }
     hit()
     {
